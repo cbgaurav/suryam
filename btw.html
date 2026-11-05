@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suryam Group — Trust & Happiness</title>
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<!-- CSS -->
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/pages.css">
+<link rel="stylesheet" href="css/project-pages.css">
+<link rel="stylesheet" href="css/microsite.css">
+</head>
+<body class="project-page">
+<!-- ── WHATSAPP ── -->
+<div class="wa-btn" id="waBtn">
+  <svg viewBox="0 0 24 24">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</div>
+
+<!-- ── MAIN NAV ── -->
+<nav id="mainNav">
+  <div class="nav-logo-wrap" onclick="showPage('home')"> <span class="nav-logo-text">
+    <div class="suryam-logo"><a href="index.html"> <img src="images/suryam-group-logo-white.png" alt="Suryam Logo"/> </a></div>
+    </span> </div>
+  <div class="nav-cta right-menu" onclick="goContact()">
+    <div class="right-menu-item"><a href="contact-us.html">Contact Us</a></div>
+    <div class="nav-ham" onclick="toggleMenu()"> <span></span><span></span><span></span> </div>
+  </div>
+</nav>
+
+<!-- ── MENU OVERLAY ── -->
+<div class="menu-ov" id="menuOv">
+  <div class="menu-close" onclick="toggleMenu()">✕ &nbsp;Close</div>
+  <div class="menu-links"> 
+    <!--
+    <div class="menu-link" onclick="navTo('home')">Homepage</div>
+    <div class="menu-divider"></div>
+-->
+    <div class="menu-link"><a href="about-suryam.html">About Suryam</a></div>
+    <div class="menu-link"><a href="team.html">Our Team</a></div>
+    <div class="menu-link"><a href="projects.html">Projects</a></div>
+    <div class="menu-divider"></div>
+    <div class="menu-link"><a href="btw.html">By The Waters</a></div>
+    <div class="menu-link"><a href="sage.html">The Sage</a></div>
+    <div class="menu-link">The Park</div>
+    <div class="menu-link">Suryam Arnath</div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     PAGE: HOME
+     Inject into #page-home
+══════════════════════════════════════ --> 
+
+<!-- BTW NAV --> 
+
+<!--
+<div class="proj-nav">
+  <div class="proj-nav-menu" onclick="showPage('projects')">← Back</div>
+  <div class="proj-nav-logo" onclick="showPage('btw')"> <span style="font-size:10px;letter-spacing:0.28em;color:var(--proj-muted)">— BY THE —</span> <br>
+    <span style="font-family:'Cormorant Garamond',serif;font-size:18px;letter-spacing:0.28em;color:var(--proj-text)">WATERS</span> <span class="proj-nav-logo-sub">Where You Belong</span> </div>
+  <div class="proj-nav-cta">Enquire Now</div>
+</div>
+--> 
+
+<!-- 1. HERO -->
+<div class="proj-hero">
+  <div class="banner-video">
+    <video
+    width="100%"
+    height="100%"
+    loop
+    autoplay
+    playsinline
+    muted
+    controlslist="nodownload nofullscreen noremoteplayback"
+    poster="video/banner-poster.jpg"
+    class="video cover video-player"
+  >
+      <source src="video/banner-video.mp4" type="video/mp4" />
+    </video>
+    <div class="audio-controls">
+      <svg class="icon-muted" aria-label="Audio is muted" fill="currentColor" height="14" width="14" viewBox="0 0 48 48">
+        <title>Muted</title>
+        <path clip-rule="evenodd" fill-rule="evenodd" d="M1.5 13.3c-.8 0-1.5.7-1.5 1.5v18.4c0 .8.7 1.5 1.5 1.5h8.7l12.9 12.9c.9.9 2.5.3 2.5-1v-9.8c0-.4-.2-.8-.4-1.1l-22-22c-.3-.3-.7-.4-1.1-.4h-.6zm46.8 31.4-5.5-5.5C44.9 36.6 48 31.4 48 24c0-11.4-7.2-17.4-7.2-17.4-.6-.6-1.6-.6-2.2 0L37.2 8c-.6.6-.6 1.6 0 2.2 0 0 5.7 5 5.7 13.8 0 5.4-2.1 9.3-3.8 11.6L35.5 32c1.1-1.7 2.3-4.4 2.3-8 0-6.8-4.1-10.3-4.1-10.3-.6-.6-1.6-.6-2.2 0l-1.4 1.4c-.6.6-.6 1.6 0 2.2 0 0 2.6 2 2.6 6.7 0 1.8-.4 3.2-.9 4.3L25.5 22V1.4c0-1.3-1.6-1.9-2.5-1L13.5 10 3.3-.3c-.6-.6-1.5-.6-2.1 0L-.2 1.1c-.6.6-.6 1.5 0 2.1L4 7.6l26.8 26.8 13.9 13.9c.6.6 1.5.6 2.1 0l1.4-1.4c.7-.6.7-1.6.1-2.2z"/>
+      </svg>
+      <svg class="icon-playing hidden" aria-label="Audio is playing" fill="currentColor" height="14" width="14" viewBox="0 0 24 24">
+        <title>Playing</title>
+        <path d="M16.636 7.028a1.5 1.5 0 10-2.395 1.807 5.365 5.365 0 011.103 3.17 5.378 5.378 0 01-1.105 3.176 1.5 1.5 0 102.395 1.806 8.396 8.396 0 001.71-4.981 8.39 8.39 0 00-1.708-4.978zm3.73-2.332A1.5 1.5 0 1018.04 6.59 8.823 8.823 0 0120 12.007a8.798 8.798 0 01-1.96 5.415 1.5 1.5 0 002.326 1.894 11.672 11.672 0 002.635-7.31 11.682 11.682 0 00-2.635-7.31zm-8.963-3.613a1.001 1.001 0 00-1.082.187L5.265 6H2a1 1 0 00-1 1v10.003a1 1 0 001 1h3.265l5.01 4.682.02.021a1 1 0 001.704-.814L12.005 2a1 1 0 00-.602-.917z"/>
+      </svg>
+    </div>
+  </div>
+  
+  <!--  <div class="proj-hero-bg" style="color:rgba(200,220,240,0.15);border-color:rgba(200,220,240,0.08)">[ Video: Arnab Shoot — Reel 01 (6) ]</div>-->
+  <div class="proj-hero-overlay" style="background:linear-gradient(180deg,transparent 40%,rgba(10,20,32,0.5) 100%)"></div>
+  <div class="proj-hero-content"> 
+    <!--    <div class="proj-hero-tag" style="color:rgba(200,220,240,0.5)">Ahmedabad · Residential</div>-->
+    <div class="proj-hero-title" style="color:white">WATERFRONT<br>
+      LIVING</div>
+    <div class="proj-hero-sub">Where You Belong</div>
+    <div style="display:flex;gap:14px;justify-content:center">
+      <div class="ps-btn"><a href="#villas-section">Explore Villas</a></div>
+      <div class="ps-btn"><a href="#enquire-section">Enquire Now</a></div>
+    </div>
+  </div>
+  <div class="proj-scroll-down">
+    <div class="proj-scroll-lbl" style="color:rgba(255,255,255,0.3)">Scroll</div>
+    <div class="proj-scroll-line" style="background:linear-gradient(180deg,rgba(255,255,255,0.3),transparent)"></div>
+  </div>
+</div>
+
+<!-- 2. ABOUT PROJECT BRIEF -->
+<div class="psec rv">
+  <div class="two-col about-project-col">
+    <div>
+      <div class="ps-title">Pavilion of Light, Wind, and Water</div>
+      <div class="ps-div"></div>
+      <div class="ps-body">Welcome to Ahmedabad’s most exclusive waterfront estate; a low-density, 100-acre sanctuary where life
+        flows at the pace of nature. </div>
+      <div class="ps-body" style="margin-top:12px">By The Waters is an uncompromising world of just 99 limited-edition private domains. Inspired by the eternal connection between humanity and water, this masterwork offers an unparalleled living experience
+        where elemental nature and architectural artistry coexist in perfect harmony.</div>
+      
+      <!--      <div style="margin-top:18px;display:flex;flex-wrap:wrap;gap:6px"> <span style="border:1px solid var(--proj-border);padding:5px 12px;font-size:8px;letter-spacing:0.14em;color:var(--proj-muted);text-transform:uppercase">Luxury Villas</span> <span style="border:1px solid var(--proj-border);padding:5px 12px;font-size:8px;letter-spacing:0.14em;color:var(--proj-muted);text-transform:uppercase">Waterfront</span> <span style="border:1px solid var(--proj-border);padding:5px 12px;font-size:8px;letter-spacing:0.14em;color:var(--proj-muted);text-transform:uppercase">The Water's Edge Club</span> <span style="border:1px solid var(--proj-border);padding:5px 12px;font-size:8px;letter-spacing:0.14em;color:var(--proj-muted);text-transform:uppercase">4 &amp; 5 BHK</span> </div>--> 
+      
+    </div>
+    <div class="ps-img"> <span> <img src="images/bythewaters/about-by-the-water.jpg" class="img-suryam height-medium" alt=""/> </span></div>
+  </div>
+</div>
+
+<!-- 3. Project Gallery -->
+<div class="psec psec-alt rv">
+  <div class="carousel project-carousel">
+    <div class="slide active"> <img src="images/bythewaters/gallery/by-the-waters-gallery-1.jpg" alt=""> </div>
+    <div class="slide"> <img src="images/bythewaters/gallery/by-the-waters-gallery-2.jpg" alt=""> </div>
+    <div class="slide"> <img src="images/bythewaters/gallery/by-the-waters-gallery-3.jpg" alt=""> </div>
+    <button class="all-nav prev"><img src="images/left-arrow.png" alt=""/></button>
+    <button class="all-nav next"><img src="images/right-arrow.png" alt=""/></button>
+    <div class="dots"></div>
+  </div>
+</div>
+
+<!-- 4. About Villa -->
+<div class="psec rv" id="villas-section">
+  <div class="two-col">
+    <div class="ps-img"><span><img src="images/bythewaters/villa-living.jpg" class="img-suryam height-medium" alt=""/></span></div>
+    <div>
+      <div class="ps-title">The Architecture of Stillness</div>
+      <div class="ps-div"></div>
+      <div class="ps-body">Every villa at By The Waters is a dedicated sanctuary for the senses, masterfully envisioned by SCDA
+        Singapore. Expansive floor-to-ceiling windows invite the stillness of the water indoors, complemented by
+        refined finishes and select interiors that embody pure restraint.</div>
+      <div class="ps-body" style="margin-top:12px">Built on a scale that gracefully accommodates private pools, landscaped gardens, and direct waterfront access, each home is a considered, unique response to its natural site.</div>
+      <!--
+      <div style="margin-top:22px">
+        <div class="ps-btn">Villa Details</div>
+      </div>
+--> 
+    </div>
+  </div>
+</div>
+
+<!-- 5. Villa Gallery-->
+
+<div class="psec psec-alt rv">
+  <div class="carousel villas-carousel">
+    <div class="slide active"> <img src="images/bythewaters/the-villas/the-villas-1.jpg" alt="">
+      <div class="overlay"></div>
+      <div class="content">
+        <h2>Luxury Villas</h2>
+        <p>The Blue Heart / Private waters, endless sky, and total discretion.</p>
+      </div>
+    </div>
+    <div class="slide"> <img src="images/bythewaters/the-villas/the-villas-2.jpg" alt="">
+      <div class="overlay"></div>
+      <div class="content">
+        <h2>Premium Residences</h2>
+        <p>Where Light Settles / Water Decks casting shadows over calm water.   </p>
+      </div>
+    </div>
+    <div class="slide"> <img src="images/bythewaters/the-villas/the-villas-3.jpg" alt="">
+      <div class="overlay"></div>
+      <div class="content">
+        <h2>Urban Lifestyle</h2>
+        <p>Slowing the Step / A path designed to stretch the morning out just a little longer.</p>
+      </div>
+    </div>
+    <div class="slide"> <img src="images/bythewaters/the-villas/the-villas-4.jpg" alt="">
+      <div class="overlay"></div>
+      <div class="content">
+        <h2>Urban Lifestyle</h2>
+        <p>Crossing the Stillness, where the landscape opens up around you.</p>
+      </div>
+    </div>
+    <button class="all-nav prev"><img src="images/left-arrow.png" alt=""/></button>
+    <button class="all-nav next"><img src="images/right-arrow.png" alt=""/></button>
+    <div class="dots"></div>
+  </div>
+</div>
+
+<!-- 6. Features -->
+<div class="psec rv">
+  <div class="ps-title">Waterfront living</div>
+  <div class="ps-div"></div>
+  <div class="ps-body">An exclusive clubhouse offering an unparalleled array of amenities, designed to elevate everyday life.</div>
+  <!-- Tabs -->
+  <div class="amenity-tabs">
+    <button class="property-tab active" data-tab="property"> Property Features </button>
+    <button class="property-tab" data-tab="villa"> Villa Features </button>
+  </div>
+  <!-- Property -->
+  <div class="property-content active" id="property">
+    <div class="amenity-grid features-grid">
+      <div class="amenity-item">
+        <div class="amenity-icon">
+          <div class="amenity-dot"></div>
+        </div>
+        <div class="amenity-name">99 Internationally designed waterfront villas</div>
+      </div>
+      <div class="amenity-item">
+        <div class="amenity-icon">
+          <div class="amenity-dot"></div>
+        </div>
+        <div class="amenity-name">The Resort Club</div>
+      </div>
+      <div class="amenity-item">
+        <div class="amenity-icon">
+          <div class="amenity-dot"></div>
+        </div>
+        <div class="amenity-name">The waterbody spread across 72,600 sq. yd.</div>
+      </div>
+      <div class="amenity-item">
+        <div class="amenity-icon">
+          <div class="amenity-dot"></div>
+        </div>
+        <div class="amenity-name">India's first private Kayak club </div>
+      </div>
+      <div class="amenity-item">
+        <div class="amenity-icon">
+          <div class="amenity-dot"></div>
+        </div>
+        <div class="amenity-name">Café (Barefoot Island)</div>
+      </div>
+      <div class="amenity-item">
+        <div class="amenity-icon">
+          <div class="amenity-dot"></div>
+        </div>
+        <div class="amenity-name">Property Management Services incl. grounds keeping, private gardens, pools & housekeeping options </div>
+      </div>
+    </div>
+    <!--        <img src="images/bythewaters/by-the-water-indoor-amenities.jpg" alt="Indoor Amenities">--> 
+  </div>
+  <!-- Villa -->
+  <div class="property-content" id="villa">
+    <div class="amenity-grid features-grid">
+      <div class="amenity-item">
+        <div class="amenity-icon">
+          <div class="amenity-dot"></div>
+        </div>
+        <div class="amenity-name">Designed by SCDA, Singapore</div>
+      </div>
+      <div class="amenity-item">
+        <div class="amenity-icon">
+          <div class="amenity-dot"></div>
+        </div>
+        <div class="amenity-name">Options ranging from 3 BHK – 5 BHK measuring 500 – 950 sq. yds.</div>
+      </div>
+      <div class="amenity-item">
+        <div class="amenity-icon">
+          <div class="amenity-dot"></div>
+        </div>
+        <div class="amenity-name">Options pool, deck and gazebo</div>
+      </div>
+      <div class="amenity-item">
+        <div class="amenity-icon">
+          <div class="amenity-dot"></div>
+        </div>
+        <div class="amenity-name">European Marble</div>
+      </div>
+      <div class="amenity-item">
+        <div class="amenity-icon">
+          <div class="amenity-dot"></div>
+        </div>
+        <div class="amenity-name">Exclusive collection for Bathrooms </div>
+      </div>
+      <div class="amenity-item">
+        <div class="amenity-icon">
+          <div class="amenity-dot"></div>
+        </div>
+        <div class="amenity-name">Slim line design for all glass windows & doors </div>
+      </div>
+    </div>
+    <!--        <img src="images/bythewaters/by-the-water-outdoor-amenities.jpg" alt="Outdoor Amenities">--> 
+  </div>
+  <script>
+document.querySelectorAll('.property-tab').forEach(tab => {
+
+    tab.addEventListener('click', () => {
+
+        document.querySelectorAll('.property-tab').forEach(btn =>
+            btn.classList.remove('active')
+        );
+
+        document.querySelectorAll('.property-content').forEach(content =>
+            content.classList.remove('active')
+        );
+
+        tab.classList.add('active');
+
+        document
+            .getElementById(tab.dataset.tab)
+            .classList.add('active');
+
+    });
+
+});
+</script> 
+</div>
+
+<!-- 7. About Clubhouse -->
+<div class="psec rv">
+  <div class="two-col">
+    <div class="ps-img"><span><img src="images/bythewaters/clubhouse-about.jpg" class="img-suryam height-medium" alt=""/></span></div>
+    <div>
+      <div class="ps-title">The Water's Edge</div>
+      <div class="ps-div"></div>
+      <div class="ps-body">A conscious structural anchor within the larger landscape, built for physical connection and quiet restoration. From the lakefront lounge to the swimming pool, every detail is crafted to interface directly with the water. </div>
+      <div class="ps-body" style="margin-top:12px">This is where the community footprint takes shape for morning laps, evening gatherings, and the shared experience of a terrain that quietly changes with the elements.</div>
+      <!--
+      <div style="margin-top:22px">
+        <div class="ps-btn">Club Details</div>
+      </div>
+--> 
+    </div>
+  </div>
+</div>
+
+<!-- 8. Clubhouse Gallery --> 
+<!--
+<div class="psec psec-alt rv">
+  <div class="carousel clubhouse-carousel">
+    <div class="slide active"> <img src="images/bythewaters/gallery/by-the-waters-gallery-1.jpg" alt="">       
+    </div>
+    <div class="slide"> <img src="images/bythewaters/gallery/by-the-waters-gallery-2.jpg" alt="">        
+    </div>
+    <div class="slide"> <img src="images/bythewaters/gallery/by-the-waters-gallery-3.jpg" alt="">      
+    </div>
+    <button class="all-nav prev"><img src="images/left-arrow.png" alt=""/></button>
+    <button class="all-nav next"><img src="images/right-arrow.png" alt=""/></button>
+    <div class="dots"></div>
+  </div>
+</div>
+--> 
+
+<!-- 9. Amenities -->
+
+<div class="psec psec-alt rv amenities-sec">
+  <div class="ps-title">A Ledger of Landscape and Leisure</div>
+  <div class="ps-div"></div>
+  <div class="ps-body">A deliberate, balanced ecosystem of indoor and outdoor amenities mapped along the water’s edge. From
+    the structured luxury of the spa, pool, and yoga decks to natural anchor points like the Kayak Club, Shunya
+    Forest, and Barefoot Island; these spaces are skillfully orchestrated to offer a deeply grounded, unhurried
+    way of living.</div>
+  
+  <!-- Tabs -->
+  <div class="amenity-tabs">
+    <button class="amenity-tab active" data-tab="indoor"> Indoor Amenities </button>
+    <button class="amenity-tab" data-tab="outdoor"> Outdoor Amenities </button>
+  </div>
+  
+  <!-- Indoor Amenities -->
+  <div class="amenity-content active" id="indoor">
+    <div class="amenity-two-col">
+      <div class="amenity-grid">
+        <div class="amenity-item">
+          <div class="amenities-icon"> <img src="images/bythewaters/icons/suites-rooms.png" alt=""/> </div>
+          <div class="amenity-name">Exclusive Suites & Rooms</div>
+        </div>
+        <div class="amenity-item">
+          <div class="amenities-icon"> <img src="images/bythewaters/icons/spa-wellness.png" alt=""/> </div>
+          <div class="amenity-name">Spa & Wellness Centre</div>
+        </div>
+        <div class="amenity-item">
+          <div class="amenities-icon"> <img src="images/bythewaters/icons/fitness-centre.png" alt=""/> </div>
+          <div class="amenity-name">Fitness and Yoga Studio</div>
+        </div>
+        <div class="amenity-item">
+          <div class="amenities-icon"> <img src="images/bythewaters/icons/infinity-pool.png" alt=""/> </div>
+          <div class="amenity-name">Multiple Pools</div>
+        </div>
+        <div class="amenity-item">
+          <div class="amenities-icon"> <img src="images/bythewaters/icons/library.png" alt=""/> </div>
+          <div class="amenity-name">Library / Co-working Space</div>
+        </div>
+        <div class="amenity-item">
+          <div class="amenities-icon"> <img src="images/bythewaters/icons/indoor-and-outdoor-games.png" alt=""/> </div>
+          <div class="amenity-name">Indoor & Outdoor Games</div>
+        </div>
+      </div>
+      <div class="amenity-col-img"> <img src="images/bythewaters/by-the-water-indoor-amenities.jpg" alt="Indoor Amenities"> </div>
+    </div>
+  </div>
+  
+  <!-- Outdoor Amenities -->
+  <div class="amenity-content" id="outdoor">
+    <div class="amenity-two-col">
+      <div class="amenity-grid">
+        <div class="amenity-item">
+          <div class="amenities-icon"> <img src="images/bythewaters/icons/walking-trail.png" alt=""/> </div>
+          <div class="amenity-name">Waterfront walking trail</div>
+
+        </div>
+        <div class="amenity-item">
+          <div class="amenities-icon"> <img src="images/bythewaters/icons/cycling-trail.png" alt=""/> </div>
+          <div class="amenity-name">Cycling Trail</div>
+        </div>
+        <div class="amenity-item">
+          <div class="amenities-icon"> <img src="images/bythewaters/icons/kayak-trail.png" alt=""/> </div>
+          <div class="amenity-name">Kayak Trail</div>
+        </div>
+        <div class="amenity-item">
+          <div class="amenities-icon"> <img src="images/bythewaters/icons/terraced-deck.png" alt=""/> </div>
+          <div class="amenity-name">Terraced Deck & BBQ Area</div>
+        </div>
+<!--
+        <div class="amenity-item">
+          <div class="amenities-icon"> <img src="images/bythewaters/icons/bonfire-and-hammocks.png" alt=""/> </div>
+          <div class="amenity-name">Bonfire & Hammocks</div>
+        </div>
+        <div class="amenity-item">
+          <div class="amenities-icon"> <img src="images/bythewaters/icons/private-cinema.png" alt=""/> </div>
+          <div class="amenity-name">Amphi-Theatre</div>
+        </div>
+        <div class="amenity-item">
+          <div class="amenities-icon"> <img src="images/bythewaters/icons/forest-trail.png" alt=""/> </div>
+          <div class="amenity-name">Forest Trail</div>
+        </div>
+-->
+        <div class="amenity-item">
+          <div class="amenities-icon"> <img src="images/bythewaters/icons/multiple-garden.png" alt=""/> </div>
+          <div class="amenity-name">Multiple Garden Experiences</div>
+        </div>
+        <div class="amenity-item">
+          <div class="amenities-icon"> <img src="images/bythewaters/icons/yoga-pavilion.png" alt=""/> </div>
+          <div class="amenity-name">Seating & Yoga Pavilion </div>
+        </div>
+      </div>
+      <div class="amenity-col-img"> <img src="images/bythewaters/by-the-water-outdoor-amenities.jpg" alt="Outdoor Amenities"> </div>
+    </div>
+  </div>
+  <script>
+document.querySelectorAll('.amenity-tab').forEach(tab => {
+
+    tab.addEventListener('click', () => {
+
+        document.querySelectorAll('.amenity-tab').forEach(btn =>
+            btn.classList.remove('active')
+        );
+
+        document.querySelectorAll('.amenity-content').forEach(content =>
+            content.classList.remove('active')
+        );
+
+        tab.classList.add('active');
+
+        document
+            .getElementById(tab.dataset.tab)
+            .classList.add('active');
+
+    });
+
+});
+</script> 
+</div>
+
+<!-- 10. MAP + CONTACT -->
+<div class="psec psec-alt rv" id="enquire-section">
+  <div class="ps-tag">Location &amp; Contact</div>
+  <div class="two-col" style="margin-top:28px">
+    <div>
+      <div class="proj-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7481.4776295923175!2d72.30419399999997!3d23.087722000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395ea1d9e2a1924d%3A0x8ddbe6c0184931f9!2sBY%20THE%20WATERS!5e1!3m2!1sen!2sin!4v1702354152988!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="project-address-block">
+        <div class="project-address-title">Address</div>
+        <div class="project-address">By The Waters, SG Highway,<br>
+          Ahmedabad, Gujarat 380 054</div>
+        <div class="project-address-title">Phone</div>
+        <div class="project-phone"><a href="tel:+919033117777">+91 90331 17777</a></div>
+      </div>
+    </div>
+    <div>
+      <div class="ps-title" style="font-size:30px;margin-bottom:22px">Register Your<br>
+        Interest</div>
+      <input class="proj-contact-input" placeholder="Your Name" type="text">
+      <input class="proj-contact-input" placeholder="Phone Number" type="tel">
+      <input class="proj-contact-input" placeholder="Email Address" type="email">
+      <select class="proj-contact-input" style="appearance:none;cursor:pointer">
+        <option value="" disabled selected>Type of Enquiry</option>
+        <option>Residence Details</option>
+        <option>Pricing</option>
+        <option>Schedule a Visit</option>
+      </select>
+      <button class="proj-contact-submit">Send Enquiry</button>
+    </div>
+  </div>
+</div>
+<!-- FOOTER -->
+<footer class="main-footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-name">
+        <div class="suryam-logo-footer"> <img src="images/suryam-group-logo-white.png" alt="Suryam Logo"/> </div>
+      </div>
+      <!--      <div class="footer-brand-desc">Ahmedabad's pioneer in luxury real estate since 1993. Building communities, not just houses.</div>--> 
+    </div>
+    <div>
+      <div class="footer-col-hd">Projects</div>
+      <div class="footer-lk"><a href="btw.html">By The Waters</a></div>
+	  <div class="footer-lk"><a href="sage.html">The Sage</a></div>
+      <div class="footer-lk">The Park</div>
+      <div class="footer-lk">Suryam Arnath</div>
+      <div class="footer-lk">Suryam Repose</div>
+      <div class="footer-lk">The Banyan</div>
+    </div>
+    <div>
+      <div class="footer-col-hd">Company</div>
+      <div class="footer-lk"><a href="about-suryam.html">About Suryam</a></div>
+	  <div class="footer-lk"><a href="team.html">Our Team</a></div>
+	  <div class="footer-lk"><a href="projects.html">Projects</a></div>
+      <div class="footer-lk">Awards & Media</div>
+    </div>
+    <div>
+      <div class="footer-col-hd">Connect</div>
+      <div class="footer-lk"><a href="partner-with-us.html">Partner With Us</a></div>
+      <div class="footer-lk"><a href="vendor-registration.html">Vendor Registration</a></div>
+      <div class="footer-lk"><a href="maintenance-query.html">Maintenance Query</a></div>
+      <div class="footer-lk"><a href="nris.html">NRI's</a></div>
+      
+	  <div class="footer-lk"><a href="contact-us.html">Contact Us</a></div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 Suryam Group. All rights reserved. <a href="https://compubrain.com/" target="_blank" class="cb" title="Website Designed By CompuBrain"><img src="images/website-designed-by-compubrain.png" alt="CompuBrain Monogram"></a></div>
+    <div class="footer-copy">Privacy Policy &nbsp;·&nbsp; Terms of Use</div>
+  </div>
+</footer>
+
+<!-- JS --> 
+<script src="js/main.js"></script> 
+<script src="js/carousel.js"></script> 
+<!--<script src="js/loader.js"></script> --> 
+<script>
+const allVideos = document.querySelectorAll('.banner-video, .about-video');
+
+allVideos.forEach(wrapper => {
+
+  const video = wrapper.querySelector('video');
+  const audioToggle = wrapper.querySelector('.audio-controls');
+  const iconMuted = wrapper.querySelector('.icon-muted');
+  const iconPlaying = wrapper.querySelector('.icon-playing');
+
+  // Toggle sound
+  audioToggle.addEventListener('click', () => {
+
+    // Mute all other videos first
+    allVideos.forEach(otherWrapper => {
+
+      const otherVideo = otherWrapper.querySelector('video');
+      const otherMutedIcon = otherWrapper.querySelector('.icon-muted');
+      const otherPlayingIcon = otherWrapper.querySelector('.icon-playing');
+
+      if(otherVideo !== video){
+        otherVideo.muted = true;
+
+        otherMutedIcon.classList.remove('hidden');
+        otherPlayingIcon.classList.add('hidden');
+      }
+    });
+
+    // Toggle current video
+    video.muted = !video.muted;
+
+    if(video.muted){
+      iconMuted.classList.remove('hidden');
+      iconPlaying.classList.add('hidden');
+    } else {
+      iconMuted.classList.add('hidden');
+      iconPlaying.classList.remove('hidden');
+    }
+
+    video.play();
+  });
+
+});
+</script> 
+<script>
+const waBtn = document.getElementById("waBtn");
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+        waBtn.classList.add("show");
+    } else {
+        waBtn.classList.remove("show");
+    }
+});
+const section = document.getElementById("statsSection");
+const counters = document.querySelectorAll(".counter");
+let counted = false;
+function startCounter() {
+    counters.forEach(counter => {
+        const target = parseFloat(counter.getAttribute("data-target"));
+        let count = 0;
+        const speed = target / 100;
+        function updateCount() {
+            count += speed;
+            if (count < target) {
+                if (target % 1 !== 0) {
+                    counter.innerText = count.toFixed(1);
+                } else {
+                    counter.innerText = Math.ceil(count);
+                }
+                requestAnimationFrame(updateCount);
+            } else {
+                counter.innerText = target;
+            }
+        }
+        updateCount();
+    });
+}
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            section.classList.add("active");
+            if (!counted) {
+                startCounter();
+                counted = true;
+            }
+        } else {
+            section.classList.remove("active");
+            counted = false;
+            counters.forEach(counter => {
+                counter.innerText = "0";
+            });
+        }
+    });
+}, {
+    threshold: 0.4
+});
+observer.observe(section);
+</script> 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const video = entry.target;
+      if (entry.isIntersecting) {
+        // Play video when section comes into view
+        video.play().catch(err => {
+          console.log("Autoplay blocked:", err);
+        });
+      } else {
+        // Pause when out of view
+        video.pause();
+      }
+
+    });
+  }, {
+    threshold: 0.5 // 50% visible then play
+  });
+  // Select all videos
+  document.querySelectorAll('.video-player').forEach(video => {
+    observer.observe(video);
+  });
+});
+</script>
+</body>
+</html>

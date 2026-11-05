@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suryam Group — Trust & Happiness</title>
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<!-- CSS -->
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body class="vendor-page">
+
+<!-- ── WHATSAPP ── -->
+<div class="wa-btn" id="waBtn">
+  <svg viewBox="0 0 24 24">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</div>
+
+<!-- ── MAIN NAV ── -->
+<nav id="mainNav">
+  <div class="nav-logo-wrap" onclick="showPage('home')"> <span class="nav-logo-text">
+    <div class="suryam-logo"><a href="index.html"> <img src="images/suryam-group-logo-white.png" alt="Suryam Logo"/> </a></div>
+    </span> </div>
+  <div class="nav-cta right-menu" onclick="goContact()">
+    <div class="right-menu-item"><a href="contact-us.html">Contact Us</a></div>
+    <div class="nav-ham" onclick="toggleMenu()"> <span></span><span></span><span></span> </div>
+  </div>
+</nav>
+
+<!-- ── MENU OVERLAY ── -->
+<div class="menu-ov" id="menuOv">
+  <div class="menu-close" onclick="toggleMenu()">✕ &nbsp;Close</div>
+  <div class="menu-links"> 
+    <!--
+    <div class="menu-link" onclick="navTo('home')">Homepage</div>
+    <div class="menu-divider"></div>
+-->
+    <div class="menu-link"><a href="about-suryam.html">About Suryam</a></div>
+    <div class="menu-link"><a href="team.html">Our Team</a></div>
+    <div class="menu-link"><a href="projects.html">Projects</a></div>
+    <div class="menu-divider"></div>
+    <div class="menu-link"><a href="btw.html">By The Waters</a></div>
+    <div class="menu-link"><a href="sage.html">The Sage</a></div>
+    <div class="menu-link">The Park</div>
+    <div class="menu-link">Suryam Arnath</div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     PAGE: HOME
+     Inject into #page-home
+══════════════════════════════════════ --> 
+
+<!-- HERO -->
+<div class="page-hero">
+  <div class="page-hero-vlines">
+    <div class="ph-vl"></div>
+    <div class="ph-vl"></div>
+    <div class="ph-vl"></div>
+  </div>
+  <!--  <div class="ph-year-bg">2025</div>-->
+  <div> 
+    <!--    <div class="s-tag" style="margin-bottom:18px">Our Portfolio</div>-->
+    <div class="ph-title">Vendor Registration</div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="sec rv" id="home-contact">
+  <div class="two-col align-items-start">
+    <div class="vender-text-col"> 
+      <!--      <div class="s-tag">Get In Touch</div>-->
+      <div class="s-title">Partner with Suryam. <br>
+        Build Excellence Together.</div>
+      <div class="s-div"></div>
+      <div class="s-body">Are you a trusted name in the construction industry known for providing quality materials? If yes, register to become a trusted vendor with Suryam Group, Ahmedabad’s finest luxury real estate developer, for our various residential and commercial projects. <br>
+        <br>
+        Register below to become a part of millions of lives, to become a part of the growth story of Ahmedabad.</div>
+    </div>
+    <div class="common-form vendor-form">
+      <div class="s-title">Register as a Vendor</div>
+      <div class="s-body mb-20">Request you to kindly fill all the required details.</div>
+      <form id="Vendor_Registration">
+        
+        <!-- Progress -->
+        <div class="progressbar">
+          <div class="progress"></div>
+          <div class="progress-step active" data-title="1"></div>
+          <div class="progress-step" data-title="2"></div>
+          <div class="progress-step" data-title="3"></div>
+        </div>
+        
+        <!-- STEP 1 -->
+        <div class="form-step active">
+          <div class="vendor-row">
+            <div class="vendor-col-6">
+              <p>Name*</p>
+              <input type="text" class="req_input" id="name" name="name">
+            </div>
+            <div class="vendor-col-6">
+              <p>Company Name*</p>
+              <input type="text" class="req_input" id="Name_of_Firm" name="Name_of_Firm">
+            </div>
+            <div class="vendor-col-6">
+              <p>Category of Product*</p>
+              <input type="text" class="req_input" id="Category_of_Product" name="Category_of_Product" placeholder="Category of Product/Service for which registration is sought">
+            </div>
+            <div class="vendor-col-6">
+              <p>Complete Details of Product</p>
+              <input type="text" id="Complete_Details_of_Product" name="Complete_Details_of_Product">
+            </div>
+            <div class="vendor-col-12">
+              <p>Complete Details of product attach catalogue</p>
+              <div class="file-wrapper">
+                <input type="file" id="Product_Details_Catalogue" name="Product_Details_Catalogue">
+                <span class="file-button"> <span class="file-holder"></span> <i class="fa fa-upload"></i> Upload</span> </div>
+            </div>
+            <div class="vendor-col-6">
+              <p>Year of Establishment of firm*</p>
+              <input type="text" class="req_input" id="Year_of_Establishment_of_firm" name="Year_of_Establishment_of_firm">
+            </div>
+            <div class="vendor-col-6">
+              <p>Firm Status</p>
+              <input type="text" id="Firm_Status" name="Firm_Status" placeholder="Proprietory/Partnership/Public Limited/Pvt limited( specify)">
+            </div>
+            <div class="vendor-col-12">
+              <p>Nature of Business*</p>
+              <input type="text" class="req_input" id="Nature_of_Business" name="Nature_of_Business" placeholder="Manufacturer/Authorized agent/Trader/Others (Specify)">
+            </div>
+            <div class="vendor-col-6">
+              <p>Registered Office Address*</p>
+              <textarea id="Registered_Office_Address" class="req_input" name="Registered_Office_Address"></textarea>
+            </div>
+            <div class="vendor-col-6">
+              <p>Factory or Warehouse Address </p>
+              <!--                      <input type="text" id="Factory_Address" name="Factory_Address">-->
+              <textarea id="Factory_Address" name="Factory_Address"></textarea>
+            </div>
+            <div class="vendor-col-6">
+              <p>Email Address*</p>
+              <input type="email" class="req_input" id="email" name="email">
+            </div>
+            <div class="vendor-col-6">
+              <p>Mobile No*</p>
+              <input type="text" class="req_input"  onkeypress="contact_num_valid(event)" id="contact_no" name="contact_no" minlength="10" maxlength="15"/>
+            </div>
+          </div>
+        </div>
+        
+        <!-- STEP 2 -->
+        <div class="form-step">
+          <div class="vendor-row">
+            <div class="vendor-col-12">
+              <h4>Name & reference of two companies where supply is being done.</h4>
+            </div>
+            <div class="vendor-col-6">
+              <p>First Company Reference*</p>
+              <input type="text" class="req_input" id="First_Company_Reference" name="First_Company_Reference" placeholder="Company name and Reference person Number1">
+            </div>
+            <div class="vendor-col-6">
+              <p>Second Company Reference*</p>
+              <input type="text" class="req_input" id="Second_Company_Reference" name="Second_Company_Reference" placeholder="Company name and Reference person Number2">
+            </div>
+            <div class="vendor-col-6">
+              <p>Name of Completed Project Reference*</p>
+              <input type="text" class="req_input" id="Name_of_Completed_Project_1" name="Name_of_Completed_Project_1" placeholder="Name of Completed Project 1">
+            </div>
+            <div class="vendor-col-6">
+              <p>Name of Completed Project Reference*</p>
+              <input type="text" class="req_input" id="Name_of_Completed_Project_2" name="Name_of_Completed_Project_2" placeholder="Name of Completed Project 2">
+            </div>
+            <div class="vendor-col-6">
+              <p>If yes, please attach the manual herein.</p>
+              <input type="text" id="If_yes_please_attach_the_manual_herein" name="If_yes_please_attach_the_manual_herein" placeholder="Does quality manual exists for the material?">
+            </div>
+            <div class="vendor-col-6">
+              <p>Are quality audits done?</p>
+              <input type="text" id="Are_quality_audits_done" name="Are_quality_audits_done">
+            </div>
+            <div class="vendor-col-6">
+              <p>GST Number*</p>
+              <input type="text" class="req_input" id="GST_Number" name="GST_Number">
+            </div>
+            <div class="vendor-col-6">
+              <p>PAN Card Number*</p>
+              <input type="text" class="req_input" id="PAN_Card_Number" name="PAN_Card_Number">
+            </div>
+            <div class="vendor-col-6">
+              <p>Turn Over of last five years</p>
+              <input type="text" id="Turn_Over_of_last_three_years" name="Turn_Over_of_last_five_years">
+            </div>
+            <div class="vendor-col-6">
+              <p>Bank Details*</p>
+              <input type="text" class="req_input" id="Bank_Details" name="Bank_Details">
+            </div>
+            <div class="vendor-col-6">
+              <p>Account Number*</p>
+              <input type="text" class="req_input" id="Account_Number" name="Account_Number">
+            </div>
+            <div class="vendor-col-6">
+              <p>IFSC Code*</p>
+              <input type="text" class="req_input" id="IFSC_Code" name="IFSC_Code">
+            </div>
+          </div>
+        </div>
+        
+        <!-- STEP 3 -->
+        <div class="form-step">
+          <div class="vendor-row">
+            <div class="vendor-col-12">
+              <h4>Please submit below mentioned documents.</h4>
+            </div>
+            <div class="vendor-col-6">
+              <p>GST Registration*</p>
+              <div class="file-wrapper">
+                <input type="file" class="req_input" id="GST_Registration_Attach" name="GST_Registration_Attach">
+                <span class="file-button"> <span class="file-holder"></span> <i class="fa fa-upload"></i> Upload</span> </div>
+            </div>
+            <div class="vendor-col-6">
+              <p>PAN Card*</p>
+              <div class="file-wrapper">
+                <input type="file" class="req_input" id="PAN_Card_Attach" name="PAN_Card_Attach">
+                <span class="file-button"> <span class="file-holder"></span> <i class="fa fa-upload"></i> Upload</span> </div>
+            </div>
+            <div class="vendor-col-6">
+              <p>ISO Certificates (if any)</p>
+              <div class="file-wrapper">
+                <input type="file" id="ISO_Certificates" name="ISO_Certificates">
+                <span class="file-button"> <span class="file-holder"></span> <i class="fa fa-upload"></i> Upload</span> </div>
+            </div>
+            <div class="vendor-col-6">
+              <p>Address Proof*</p>
+              <div class="file-wrapper">
+                <input type="file" class="req_input" id="Address_Proof" name="Address_Proof">
+                <span class="file-button"> <span class="file-holder"></span> <i class="fa fa-upload"></i> Upload</span> </div>
+            </div>
+            <div class="vendor-col-12">
+              <p>MSME Registration</p>
+              <div class="file-wrapper">
+                <input type="file" id="MSME_Registration" name="MSME_Registration">
+                <span class="file-button"> <span class="file-holder"></span> <i class="fa fa-upload"></i> Upload</span> </div>
+            </div>
+            <div class="vendor-col-12">
+              <label class="container-checkbox">The above information is true in all respects and we undertake to infirm you if any change in the above particulars regarding our business from time to time.
+                <input type="checkbox" checked id="above_information_true" name="above_information_true" required value="The above information is true in all respects and we undertake to infirm you if any change in the above particulars regarding our business from time to time.">
+                <span class="checkmark"></span> </label>
+            </div>
+          </div>
+        </div>
+        
+        <!--
+        <div class="btns">
+          <button type="button" id="prevBtn">Previous</button>
+          <button type="button" id="nextBtn">Next</button>
+          <button type="submit" id="submitBtn">Submit</button>
+        </div>
+-->
+        
+        <div class="btns">
+          <p id="error_data"></p>
+          <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response">
+          <button type="button" id="prevBtn">Previous</button>
+          <button type="button" id="nextBtn">Next</button>
+          <button class="theme-btn btn-style-four border-anim-left" type="submit" name="Vendor_Registration" id="submitBtn">Submit</button>
+          <input type="hidden" value="Vendor_Registration" name="type_of_form"/>
+          <i class="fa fa-sync" id="form_process"></i> </div>
+      </form>
+    </div>
+    <style>
+		
+		.vendor-col-12 h4 {
+    font-weight: 400;
+    font-size: 16px;
+    border-top: 1px solid #242424;
+    margin-top: 0;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-bottom: 1px solid #242424;
+}
+		.vendor-form .file-wrapper{
+			margin-bottom: 0px;
+		}
+.vendor-form {
+    padding: 50px;
+    border-top: 0;
+    margin-top: 0px;
+    background: #161615;
+    max-width: 960px;
+	position: relative;
+}
+		  .form-step{
+    display:none;
+    animation:fade .4s ease;
+}
+
+.form-step.active{
+    display:block;
+}
+.btns button {
+    display: block;
+    background: transparent;
+    border: 1px solid var(--ochre-dim);
+    padding: 15px;
+    font-size: 12px;
+    letter-spacing: 1.1px;
+    color: var(--ochre);
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s;
+    margin-top: 0;
+    width: 130px;
+}		
+.vendor-row {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 25px 30px;
+    border-radius: 0;
+}
+.vendor-col-6 p, .vendor-col-12 p {
+    margin-bottom: 10px;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.60;
+    color: var(--beige);
+}
+.common-form input, .common-form textarea{
+	margin-bottom: 0px !important;
+}
+.vendor-col-6 {
+    width: calc(50% - 15px);
+}
+		.vendor-col-12 {
+    width: 100%;
+}
+		
+@keyframes fade{
+    from{
+        opacity:0;
+        transform:translateX(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+/* Progress */
+
+.progressbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0;
+    position: absolute;
+    top: -10px;
+    right: 0;
+    width: 150px;
+}
+
+.progressbar::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--border);
+    z-index: 0;
+}
+
+.progress{
+    position:absolute;
+    top:10px;
+    left:0;
+    height:2px;
+    width:0%;
+    background:#989898;
+    transition:.4s;
+    z-index:1;
+}
+
+.progress-step {
+    width: 20px;
+    height: 20px;
+    background: #eee;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    background: #222119;
+    border: 2px solid #2a2a2a;
+}
+
+.progress-step.active {
+    background: #222119;
+    color: #fff;
+    border: 2px solid #999999;
+}
+.btns {
+    display: flex;
+    margin-top: 30px;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+#prevBtn{
+    display:none;
+}
+
+#submitBtn{
+    display:none;
+}
+		
+		
+		.container-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 22px;
+    user-select: none;
+}
+
+/* Hide default checkbox */
+.container-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Custom checkbox */
+.container-checkbox .checkmark {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 22px;
+    height: 22px;
+    border: 1px solid var(--border2);
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+	background: var(--bg3);
+}
+
+/* Checked state */
+.container-checkbox input:checked ~ .checkmark {
+    background: #c4a359;
+    border-color: #c4a359;
+}
+
+.container-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 6px;
+    top: 1px;
+    width: 6px;
+    height: 11px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.container-checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+.container-checkbox input:focus-visible ~ .checkmark {
+    outline: 2px solid #c4a359;
+    outline-offset: 2px;
+}
+		
+		
+		
+	  </style>
+    <script>
+		  const steps=document.querySelectorAll(".form-step");
+const progress=document.querySelector(".progress");
+const progressSteps=document.querySelectorAll(".progress-step");
+
+const nextBtn=document.getElementById("nextBtn");
+const prevBtn=document.getElementById("prevBtn");
+const submitBtn=document.getElementById("submitBtn");
+
+let current=0;
+
+function showStep(index){
+
+    steps.forEach((step)=>{
+        step.classList.remove("active");
+    });
+
+    steps[index].classList.add("active");
+
+    progressSteps.forEach((step,i)=>{
+        if(i<=index){
+            step.classList.add("active");
+        }else{
+            step.classList.remove("active");
+        }
+    });
+
+    const width=(index)/(progressSteps.length-1)*100;
+    progress.style.width=width+"%";
+
+    prevBtn.style.display=index===0?"none":"inline-block";
+
+    if(index===steps.length-1){
+        nextBtn.style.display="none";
+        submitBtn.style.display="inline-block";
+    }else{
+        nextBtn.style.display="inline-block";
+        submitBtn.style.display="none";
+    }
+}
+
+function validateStep(){
+
+    const inputs=steps[current].querySelectorAll(".req_input");
+
+    let valid=true;
+
+    inputs.forEach(input=>{
+
+        if(input.value.trim()==""){
+
+            input.style.border="1px solid red";
+
+            valid=false;
+
+        }else{
+
+            input.style.border="1px solid #ddd";
+
+        }
+
+    });
+
+    return valid;
+}
+
+nextBtn.onclick=function(){
+
+    if(!validateStep()) return;
+
+    current++;
+
+    showStep(current);
+
+}
+
+prevBtn.onclick=function(){
+
+    current--;
+
+    showStep(current);
+
+}
+
+showStep(current);
+	  </script> 
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="main-footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-name">
+        <div class="suryam-logo-footer"> <img src="images/suryam-group-logo-white.png" alt="Suryam Logo"/> </div>
+      </div>
+      <!--      <div class="footer-brand-desc">Ahmedabad's pioneer in luxury real estate since 1993. Building communities, not just houses.</div>--> 
+    </div>
+    <div>
+      <div class="footer-col-hd">Projects</div>
+      <div class="footer-lk"><a href="btw.html">By The Waters</a></div>
+      <div class="footer-lk"><a href="sage.html">The Sage</a></div>
+      <div class="footer-lk">The Park</div>
+      <div class="footer-lk">Suryam Arnath</div>
+      <div class="footer-lk">Suryam Repose</div>
+      <div class="footer-lk">The Banyan</div>
+    </div>
+    <div>
+      <div class="footer-col-hd">Company</div>
+      <div class="footer-lk"><a href="about-suryam.html">About Suryam</a></div>
+      <div class="footer-lk"><a href="team.html">Our Team</a></div>
+      <div class="footer-lk"><a href="projects.html">Projects</a></div>
+      <div class="footer-lk">Awards & Media</div>
+    </div>
+    <div>
+      <div class="footer-col-hd">Connect</div>
+      <div class="footer-lk"><a href="partner-with-us.html">Partner With Us</a></div>
+      <div class="footer-lk"><a href="vendor-registration.html">Vendor Registration</a></div>
+      <div class="footer-lk"><a href="maintenance-query.html">Maintenance Query</a></div>
+      <div class="footer-lk"><a href="nris.html">NRI's</a></div>
+      
+      <div class="footer-lk"><a href="contact-us.html">Contact Us</a></div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 Suryam Group. All rights reserved. <a href="https://compubrain.com/" target="_blank" class="cb" title="Website Designed By CompuBrain"><img src="images/website-designed-by-compubrain.png" alt="CompuBrain Monogram"></a></div>
+    <div class="footer-copy">Privacy Policy &nbsp;·&nbsp; Terms of Use</div>
+  </div>
+</footer>
+
+<!-- JS --> 
+<script src="js/main.js"></script> 
+<!--<script src="js/loader.js"></script> --> 
+
+<script>
+const waBtn = document.getElementById("waBtn");
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+        waBtn.classList.add("show");
+    } else {
+        waBtn.classList.remove("show");
+    }
+});
+</script> 
+<script type="text/javascript">
+var SITE = SITE || {};
+
+SITE.fileInputs = function () {
+    var $this = this,
+        $val = $this.value,
+        valArray = $val.split('\\'),
+        newVal = valArray[valArray.length - 1],
+        $button = $this.parentNode.querySelector('.file-button'),
+        $fakeFile = $this.parentNode.querySelector('.file-holder');
+
+    if (newVal !== '') {
+        $button.innerHTML = 'Uploaded';
+
+        if (!$fakeFile) {
+            var span = document.createElement('span');
+            span.className = 'file-holder';
+            span.textContent = newVal;
+            $button.insertAdjacentElement('afterend', span);
+        } else {
+            $fakeFile.textContent = newVal;
+        }
+    }
+};
+
+document.addEventListener('DOMContentLoaded', function () {
+    var fileInputs = document.querySelectorAll('.file-wrapper input[type="file"]');
+
+    fileInputs.forEach(function (input) {
+        ['change', 'focus', 'click'].forEach(function (event) {
+            input.addEventListener(event, SITE.fileInputs);
+        });
+    });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suryam Group — Trust & Happiness</title>
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<!-- CSS -->
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/pages.css">
+<style>
+.archived-projects .project-content {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 16px;
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
+.archived-projects h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 300;
+    color: var(--white);
+    margin-bottom: 4px;
+}
+.archived-projects .project-content p {
+    margin-bottom: 6px;
+}
+.archived-projects .project-content p:last-child {
+    margin-bottom: 0;
+}
+</style>
+</head>
+<body class="about-page">
+<!-- ── WHATSAPP ── -->
+<div class="wa-btn" id="waBtn">
+  <svg viewBox="0 0 24 24">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</div>
+
+<!-- ── MAIN NAV ── -->
+<nav id="mainNav">
+  <div class="nav-logo-wrap" onclick="showPage('home')"> <span class="nav-logo-text">
+    <div class="suryam-logo"><a href="index.html"> <img src="images/suryam-group-logo-white.png" alt="Suryam Logo"/> </a></div>
+    </span> </div>
+  <div class="nav-cta right-menu" onclick="goContact()">
+    <div class="right-menu-item"><a href="contact-us.html">Contact Us</a></div>
+    <div class="nav-ham" onclick="toggleMenu()"> <span></span><span></span><span></span> </div>
+  </div>
+</nav>
+
+<!-- ── MENU OVERLAY ── -->
+<div class="menu-ov" id="menuOv">
+  <div class="menu-close" onclick="toggleMenu()">✕ &nbsp;Close</div>
+  <div class="menu-links"> 
+    <!--
+    <div class="menu-link" onclick="navTo('home')">Homepage</div>
+    <div class="menu-divider"></div>
+-->
+	<div class="menu-link"><a href="about-suryam.html">About Suryam</a></div>
+	<div class="menu-link"><a href="team.html">Our Team</a></div>
+	<div class="menu-link"><a href="projects.html">Projects</a></div>
+	<div class="menu-divider"></div>
+	<div class="menu-link"><a href="btw.html">By The Waters</a></div>
+	<div class="menu-link"><a href="sage.html">The Sage</a></div>
+	<div class="menu-link">The Park</div>
+	<div class="menu-link">Suryam Arnath</div>
+  </div>
+</div>
+<!-- ══════════════════════════════════════
+     PAGE: PROJECTS
+     Inject into #page-projects
+══════════════════════════════════════ -->
+
+<div class="page-hero">
+  <div class="page-hero-vlines">
+    <div class="ph-vl"></div>
+    <div class="ph-vl"></div>
+    <div class="ph-vl"></div>
+  </div>
+<!--  <div class="ph-year-bg">2025</div>-->
+  <div>
+<!--    <div class="s-tag" style="margin-bottom:18px">Our Portfolio</div>-->
+    <div class="ph-title">Luxury Living Redefined</div>
+  </div>
+</div>
+<div class="sec rv"> 
+  
+  <!--  <div class="s-tag">What We Build</div>-->
+  <div class="s-title">Our Projects</div>
+  <div class="s-div"></div>
+  <div class="proj-tabs" style="margin-top:32px">
+    <div class="proj-tab active" onclick="switchProjTab(this,'ongoing-proj')">Ongoing</div>
+    <div class="proj-tab" onclick="switchProjTab(this,'completed-proj')">Completed</div>
+    <div class="proj-tab" onclick="switchProjTab(this,'archived-proj')"> Previous </div>
+  </div>
+  
+  <!-- ONGOING -->
+  <div id="tab-ongoing-proj"> 
+    <!-- By The Waters -->
+    <div class="proj-full rv" onclick="showPage('btw')">
+      <div class="proj-full-bg" style="background:linear-gradient(135deg,#060c16 0%,#0c1a2a 100%)">
+        <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:9px;letter-spacing:0.28em;color:rgba(122,156,184,0.1);text-transform:uppercase"> <img src="images/projects/repose-by-the-waters.jpg" class="img-suryam" alt=""/> </div>
+      </div>
+      <div class="proj-full-overlay"></div>
+      <div class="proj-full-content">
+        <div class="proj-num">01</div>
+        <div class="proj-full-loc">Ahmedabad · Residential · Ongoing</div>
+        <div class="proj-full-name">By The Waters</div>
+        <div class="proj-full-tag">Where You Belong</div>
+        <div class="proj-full-desc">A private waterfront estate arranged around a living, engineered lake. Luxury villas, The Water's Edge Club, and nature-integrated living.</div>
+        <div class="btn-border" style="color:rgba(204,216,228,0.65);border-color:rgba(122,156,184,0.25)"><a href="btw.html">Explore Project</a></div>
+      </div>
+    </div>
+    <!-- The Sage -->
+    <div class="proj-full rv" onclick="showPage('sage')">
+      <div class="proj-full-bg" style="background:linear-gradient(135deg,#0a1208 0%,#121a0d 100%)">
+        <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:9px;letter-spacing:0.28em;color:rgba(143,170,96,0.1);text-transform:uppercase"><img src="images/projects/the-sage-by-repose.jpg" class="img-suryam" alt=""/></div>
+      </div>
+      <div class="proj-full-overlay" style="background:linear-gradient(90deg,rgba(8,12,6,0.85) 0%,rgba(8,12,6,0.2) 70%,transparent 100%)"></div>
+      <div class="proj-full-content">
+        <div class="proj-num" style="color:rgba(143,170,96,0.05)">02</div>
+        <div class="proj-full-loc" style="color:rgba(221,228,208,0.35)">Ahmedabad · Residential · By Repose</div>
+        <div class="proj-full-name" style="color:#dde4d0">The Sage</div>
+        <div class="proj-full-tag" style="color:rgba(143,170,96,0.6)">By Repose</div>
+        <div class="proj-full-desc" style="color:rgba(221,228,208,0.4)">Courtyard villas in a forest clearing. Nature-integrated design where the finest address gives the most land back to the landscape.</div>
+        <div class="btn-border" style="color:rgba(221,228,208,0.55);border-color:rgba(143,170,96,0.2)"><a href="sage.html">Explore Project</a></div>
+      </div>
+    </div>
+    <div class="proj-full rv" onclick="showPage('sage')">
+      <div class="proj-full-bg" style="background:linear-gradient(135deg,#0a1208 0%,#121a0d 100%)">
+        <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:9px;letter-spacing:0.28em;color:rgba(143,170,96,0.1);text-transform:uppercase"><img src="images/projects/the-park-by-repose.jpg" class="img-suryam" alt=""/></div>
+      </div>
+      <div class="proj-full-overlay" style="background:linear-gradient(90deg,rgba(8,12,6,0.85) 0%,rgba(8,12,6,0.2) 70%,transparent 100%)"></div>
+      <div class="proj-full-content">
+        <div class="proj-num" style="color:rgba(143,170,96,0.05)">03</div>
+        <div class="proj-full-loc" style="color:rgba(221,228,208,0.35)">Ahmedabad · Residential · By Repose</div>
+        <div class="proj-full-name" style="color:#dde4d0">The Park</div>
+        <div class="proj-full-tag" style="color:rgba(143,170,96,0.6)">By Repose</div>
+        <div class="proj-full-desc" style="color:rgba(221,228,208,0.4)">Life can either be measured in years or in experiences. The Park by Repose is for those who believe in the later. It is a first home created for effortless suburban living, replete with exhilarating experiences for the whole family.</div>
+        <div class="btn-border" style="color:rgba(221,228,208,0.55);border-color:rgba(143,170,96,0.2)">Explore Project</div>
+      </div>
+    </div>
+    <div class="proj-full rv" onclick="showPage('sage')">
+      <div class="proj-full-bg" style="background:linear-gradient(135deg,#0a1208 0%,#121a0d 100%)">
+        <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:9px;letter-spacing:0.28em;color:rgba(143,170,96,0.1);text-transform:uppercase"><img src="images/projects/suryam-arnath.jpg" class="img-suryam" alt=""/></div>
+      </div>
+      <div class="proj-full-overlay" style="background:linear-gradient(90deg,rgba(8,12,6,0.85) 0%,rgba(8,12,6,0.2) 70%,transparent 100%)"></div>
+      <div class="proj-full-content">
+        <div class="proj-num" style="color:rgba(143,170,96,0.05)">04</div>
+        <div class="proj-full-loc" style="color:rgba(221,228,208,0.35)">Ahmedabad · Residential</div>
+        <div class="proj-full-name" style="color:#dde4d0">Suryam Arnath</div>
+        <div class="proj-full-tag" style="color:rgba(143,170,96,0.6)">3 & 3.5 BHK Lifestyle Apartments</div>
+        <div class="proj-full-desc" style="color:rgba(221,228,208,0.4)">Elevate your living experience in a 14-storey luxurious residential redevelopment project, offering exquisite 3 & 3.5 BHK apartments adorned with balconies that unveil breath taking views. Nestled in close proximity to the Sabarmati Riverfront, this haven seamlessly merges urban living with natural beauty.</div>
+        <div class="btn-border" style="color:rgba(221,228,208,0.55);border-color:rgba(143,170,96,0.2)">Explore Project</div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- COMPLETED -->
+  <div id="tab-completed-proj" style="display:none">
+    <div>
+      <div class="three-col">
+        <div class="proj-card-large" style="height:400px;cursor:default">
+          <div class="proj-card-large-bg" style="background:var(--bg3)">
+            <div class="home-project"> <img src="images/projects/suryam-repose.jpg" class="img-suryam" alt=""/> </div>
+          </div>
+          <div class="proj-card-large-overlay"></div>
+          <div class="proj-card-large-content">
+            <div class="proj-name" style="font-size:22px">Suryam Repose</div>
+            <div class="proj-sub">Completed</div>
+          </div>
+        </div>
+        <div class="proj-card-large" style="height:400px;cursor:default">
+          <div class="proj-card-large-bg" style="background:var(--bg3)">
+            <div class="home-project"> <img src="images/projects/the-banyan.jpg" class="img-suryam" alt=""/> </div>
+          </div>
+          <div class="proj-card-large-overlay"></div>
+          <div class="proj-card-large-content">
+            <div class="proj-name" style="font-size:22px">The Banyan</div>
+            <div class="proj-sub">Completed</div>
+          </div>
+        </div>
+		  
+		<div class="proj-card-large old-project" style="height:400px;" onclick="switchProjTab(this,'archived-proj')">
+          <div class="proj-card-large-bg" style="background:var(--bg3)">
+            
+          </div>
+          <div class="proj-card-large-overlay"></div>
+          <div class="proj-card-large-content">
+            <div class="proj-name" style="font-size:22px">Old Projects</div>
+          </div>
+        </div>
+
+<!--
+        <div class="proj-card-large" style="height:400px;cursor:default">
+          <div class="proj-card-large-bg" style="background:var(--bg3)">
+            <div class="home-project"> <img src="images/projects/suryam-ananta.jpg" class="img-suryam" alt=""/> </div>
+          </div>
+          <div class="proj-card-large-overlay"></div>
+          <div class="proj-card-large-content">
+            <div class="proj-name" style="font-size:22px">Suryam Ananta</div>
+            <div class="proj-sub">Completed</div>
+          </div>
+        </div>
+-->
+
+      </div>
+    </div>
+  </div>
+  <div id="tab-archived-proj" style="display:none">
+    <div>
+      <div class="three-col archived-projects">
+		  
+		  <div class="project-card">
+          <div class="project-content">
+            <h3>Suryam Ananta</h3>
+            <p>Vastral (2024) | 3 BHK exlcusive living and retail spaces</p>
+            <p>Designed to provide comfortable everyday living for families.</p>
+          </div>
+        </div>
+		  
+		  
+        <div class="project-card">
+          <div class="project-content">
+            <h3>Suryam Sky</h3>
+            <p>Vastral (2012) | 2BHK Apartments</p>
+            <p>Designed to provide comfortable everyday living for families.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-content">
+            <h3>Suryam Bungalows</h3>
+            <p>Nikol (2009) | Twin Bungalows</p>
+            <p>Built for families who value privacy and independent living.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-content">
+            <h3>Suryam Sukriti Bungalows</h3>
+            <p>Thaltej (2006) | 4BHK Bungalows</p>
+            <p>Built to give larger families the space and comfort they need.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-content">
+            <h3>Surya Ami Apartment</h3>
+            <p>Ranip (2002) | 1 &amp; 2BHK</p>
+            <p>A practical home for small families and working individuals.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-content">
+            <h3>Suryaketu Apartment</h3>
+            <p>Bodakdev (1997) | 3 &amp; 4BHK</p>
+            <p>Spacious homes built to grow with your family.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-content">
+            <h3>Suryam Flora</h3>
+            <p>Nikol (2016) | 4BHK Lifestyle Apartments</p>
+            <p>Focused on providing a comfortable and modern living experience.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-content">
+            <h3>Suryam Greens</h3>
+            <p>Vastral (2013) | 1, 2 &amp; 3BHK</p>
+            <p>A home for every family size, all in one community.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-content">
+            <h3>Suryam Square</h3>
+            <p>Vastral (2013) | Commercial</p>
+            <p>A reliable commercial address for businesses of all kinds.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-content">
+            <h3>Suryam Plaza</h3>
+            <p>Khathwada (2012) | Commercial Property</p>
+            <p>A solid foundation for businesses looking to set up and grow.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="main-footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-name">
+        <div class="suryam-logo-footer"> <img src="images/suryam-group-logo-white.png" alt="Suryam Logo"/> </div>
+      </div>
+      <!--      <div class="footer-brand-desc">Ahmedabad's pioneer in luxury real estate since 1993. Building communities, not just houses.</div>--> 
+    </div>
+    <div>
+      <div class="footer-col-hd">Projects</div>
+      <div class="footer-lk"><a href="btw.html">By The Waters</a></div>
+	  <div class="footer-lk"><a href="sage.html">The Sage</a></div>
+      <div class="footer-lk">The Park</div>
+      <div class="footer-lk">Suryam Arnath</div>
+      <div class="footer-lk">Suryam Repose</div>
+      <div class="footer-lk">The Banyan</div>
+    </div>
+    <div>
+      <div class="footer-col-hd">Company</div>
+      <div class="footer-lk"><a href="about-suryam.html">About Suryam</a></div>
+	  <div class="footer-lk"><a href="team.html">Our Team</a></div>
+	  <div class="footer-lk"><a href="projects.html">Projects</a></div>
+      <div class="footer-lk">Awards & Media</div>
+    </div>
+    <div>
+      <div class="footer-col-hd">Connect</div>
+      <div class="footer-lk"><a href="partner-with-us.html">Partner With Us</a></div>
+      <div class="footer-lk"><a href="vendor-registration.html">Vendor Registration</a></div>
+      <div class="footer-lk"><a href="maintenance-query.html">Maintenance Query</a></div>
+      <div class="footer-lk"><a href="nris.html">NRI's</a></div>
+      
+      <div class="footer-lk"><a href="contact-us.html">Contact Us</a></div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 Suryam Group. All rights reserved. <a href="https://compubrain.com/" target="_blank" class="cb" title="Website Designed By CompuBrain"><img src="images/website-designed-by-compubrain.png" alt="CompuBrain Monogram"></a></div>
+    <div class="footer-copy">Privacy Policy &nbsp;·&nbsp; Terms of Use</div>
+  </div>
+</footer>
+
+<!-- JS --> 
+<script src="js/main.js"></script> 
+<!--<script src="js/loader.js"></script> --> 
+<!--<script>
+function switchProjTab(el, tab) {
+
+    // Remove active class from all tabs
+    el.closest('.proj-tabs')
+      .querySelectorAll('.proj-tab')
+      .forEach(t => t.classList.remove('active'));
+
+    // Add active class to clicked tab
+    el.classList.add('active');
+
+    // Hide all tab contents
+    document.getElementById('tab-ongoing-proj').style.display = 'none';
+    document.getElementById('tab-completed-proj').style.display = 'none';
+    document.getElementById('tab-archived-proj').style.display = 'none';
+
+    // Show selected tab content
+    document.getElementById('tab-' + tab).style.display = 'block';
+}
+</script>-->
+	
+<script>
+function switchProjTab(el, tab) {
+
+    // Remove active from all project tabs
+    document.querySelectorAll('.proj-tab, .old-project')
+        .forEach(t => t.classList.remove('active'));
+
+    // If Old Projects is clicked, activate Previous tab
+    if (el.classList.contains('old-project')) {
+        document.querySelector('.proj-tab[onclick*="archived-proj"]')
+            ?.classList.add('active');
+    } else {
+        // Otherwise activate clicked tab
+        el.classList.add('active');
+    }
+
+    // Hide all tab contents
+    document.getElementById('tab-ongoing-proj').style.display = 'none';
+    document.getElementById('tab-completed-proj').style.display = 'none';
+    document.getElementById('tab-archived-proj').style.display = 'none';
+
+    // Show selected content
+    document.getElementById('tab-' + tab).style.display = 'block';
+}
+</script>	
+	
+	
+<script>
+const waBtn = document.getElementById("waBtn");
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+        waBtn.classList.add("show");
+    } else {
+        waBtn.classList.remove("show");
+    }
+});
+</script>	
+</body>
+</html>

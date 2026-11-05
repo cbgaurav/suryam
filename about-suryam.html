@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suryam Group — Trust & Happiness</title>
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<!-- CSS -->
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body class="about-page">
+<!-- ── WHATSAPP ── -->
+<div class="wa-btn" id="waBtn">
+  <svg viewBox="0 0 24 24">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</div>
+
+<!-- ── MAIN NAV ── -->
+<nav id="mainNav">
+  <div class="nav-logo-wrap" onclick="showPage('home')"> <span class="nav-logo-text">
+    <div class="suryam-logo"><a href="index.html"> <img src="images/suryam-group-logo-white.png" alt="Suryam Logo"/> </a></div>
+    </span> </div>
+  <div class="nav-cta right-menu" onclick="goContact()">
+    <div class="right-menu-item"><a href="contact-us.html">Contact Us</a></div>
+    <div class="nav-ham" onclick="toggleMenu()"> <span></span><span></span><span></span> </div>
+  </div>
+</nav>
+
+<!-- ── MENU OVERLAY ── -->
+<div class="menu-ov" id="menuOv">
+  <div class="menu-close" onclick="toggleMenu()">✕ &nbsp;Close</div>
+  <div class="menu-links"> 
+    <!--
+    <div class="menu-link" onclick="navTo('home')">Homepage</div>
+    <div class="menu-divider"></div>
+-->
+	<div class="menu-link"><a href="about-suryam.html">About Suryam</a></div>
+	<div class="menu-link"><a href="team.html">Our Team</a></div>
+	<div class="menu-link"><a href="projects.html">Projects</a></div>
+	<div class="menu-divider"></div>
+	<div class="menu-link"><a href="btw.html">By The Waters</a></div>
+	<div class="menu-link"><a href="sage.html">The Sage</a></div>
+	<div class="menu-link">The Park</div>
+	<div class="menu-link">Suryam Arnath</div>
+  </div>
+</div>
+<!-- ══════════════════════════════════════
+     PAGE: ABOUT
+     Inject into #page-about
+══════════════════════════════════════ --> 
+
+<!-- Hero -->
+<div class="page-hero">
+  <div class="page-hero-vlines">
+    <div class="ph-vl"></div>
+    <div class="ph-vl"></div>
+    <div class="ph-vl"></div>
+  </div>
+<!--  <div class="ph-year-bg">1993</div>-->
+  <div>
+<!--    <div class="s-tag" style="margin-bottom:18px">The Suryam Story</div>-->
+    <div class="ph-title">A legacy built on the land beneath it.</div>
+    <div class="ph-sub">Suryam Developers &nbsp;|&nbsp; Ahmedabad &nbsp;|&nbsp; Est. 1993</div>
+  </div>
+</div>
+
+<!-- OUR FOUNDING -->
+<div class="sec rv">
+  <div class="two-col">
+    <div class="img-ph about-img">
+		<img src="images/about-suryam.jpg" class="img-suryam" alt="">  
+	</div>
+    <div>
+      <div class="s-title">Born From a Desire<br>
+        to Bridge the Gap</div>
+      <div class="s-div"></div>
+      <div class="s-body">It started with a simple observation: homebuyers in Ahmedabad wanted more than four walls. They wanted to belong somewhere. They wanted their children to have space to move through. They wanted neighbours who became friends, and mornings that didn't feel like the beginning of a commute.</div>
+      <div class="s-body" style="margin-top:14px">G.M. Patel had spent his career in manufacturing — a world of precision tolerances and unforgiving quality standards. When he moved into real estate in 1993, he brought all of that with him. His earliest addresses weren't Ahmedabad's flashiest. They were its most structurally honest homes that held their value, their form, and their communities across decades while neighbouring developments began, quietly, to fail.</div>
+      <div class="s-body" style="margin-top:14px">Today, Suryam is run by a second generation that grew up inside that legacy. What was inherited was the rigour. What was added was a global design education, an international network of specialists, and a particular impatience with how Indian luxury real estate had settled for less than it could be.</div>
+    </div>
+  </div>
+</div>
+
+<!-- BUILDING COMMUNITIES -->
+<div class="sec sec-alt rv" style="text-align:center">
+  <div class="home-about-text"> 
+    <div class="s-title home-title text-center">There is a kind of developer who builds to the brief. And a kind who rewrites it. </div>
+    <div class="s-div" style="margin:18px auto"></div>
+    <div class="s-body" style="margin:0 auto;text-align:justify">Since 1993, Suryam has belonged to the second category ‚bringing together ecologists, water engineers, botanists, and international architects around each project before a single wall is drawn, then asking a question most developers never think to ask: what does this land want to become? </div>
+    <blockquote class="fancy" style="margin:28px auto;text-align:justify">The answer has taken different forms across three decades. Nature communities of 150 acres. A private waterfront estate arranged around a living, engineered lake. Courtyard villas in a forest clearing. An urban address that has quietly renewed one of Ahmedabad's most storied neighbourhoods. But the method has never changed: start with the land, follow its lead, and build something that the site itself would have asked for. </blockquote>
+    <div class="s-body text-center">That discipline is what more than 4,000 families have chosen to live inside. It is what we are still building.</div>
+	  
+	  
+  </div>
+</div>
+
+<!-- VISION & MISSION -->
+<div class="sec rv">
+  <div class="two-col">
+    <div class="vm-card">
+      <div class="vm-title">Creating Limitless<br>
+        Luxury Living Spaces</div>
+      <div class="s-div"></div>
+      <div class="vm-body">To build estates where the ratio of nature to structure always favours nature, and where the finest address in any city is the one that gives the most land back to the landscape around it.</div>
+    </div>
+    <div class="vm-card">
+      <div class="vm-title">To Evolve the Way We<br>
+        Imagine Luxury Living</div>
+      <div class="s-div"></div>
+      <div class="vm-body">To deliver homes so thoughtfully made that the families who live in them wonder how they ever lived anywhere else. Every project. Without exception.</div>
+    </div>
+  </div>
+</div>
+
+<!-- CHAIRMAN MESSAGE -->
+
+<div class="sec sec-alt rv">
+  <div class="two-col" style="align-items:start;gap:80px">
+    <div class="img-ph chairman-img">
+		<img src="images/g-m-patel.jpg" class="img-suryam" alt="">  
+	</div>
+    <div>
+      <div class="s-title">A Promise Kept</div>
+      <div class="sub-founder">Mr. G.M. Patel, Founder &amp; Chairman</div>
+      <div class="s-div"></div>
+      <div class="s-body">When I started Suryam in 1993, I made one promise to every family that trusted us with one of the most significant decisions of their lives: I will give you more than you expect. Not more amenities on a list. More care. More quality where it cannot be seen. More thought behind every decision, from the soil report to the handover key. That promise has been the measure of everything we do for over thirty years.</div>
+      <div class="s-body" style="margin-top:14px">The 4,000 families who have chosen a Suryam home are the most honest audit of whether we have kept it. Many have come back for a second purchase. Some have sent their adult children to us. That is not a marketing statistic, it is the only endorsement that has ever truly mattered to me.</div>
+      <div class="s-body" style="margin-top:14px">What has changed, over three decades, is the scale of what we are able to deliver. The international design collaborators we can bring to a site. The ecological standards we can commit to and maintain. The ambition of the question we are now able to ask, and answer, with each new project. The promise has not changed. Our capacity to keep it has grown significantly.</div>
+      <div class="ch-pillar">
+        <div class="ch-pillar-title">Driven by Innovation</div>
+        <div class="ch-pillar-body">By blending modern design with practical functionality, we establish new benchmarks for luxury apartments, villas, and commercial spaces.</div>
+      </div>
+      <div class="ch-pillar">
+        <div class="ch-pillar-title">Built on Trust</div>
+        <div class="ch-pillar-body">For over thirty years, transparency and integrity have been non-negotiable. We exceed expectations at every turn.</div>
+      </div>
+      <div class="ch-pillar">
+        <div class="ch-pillar-title">Committed to the Future</div>
+        <div class="ch-pillar-body">Innovation and sustainability are at the heart of our ethos. We collaborate with leading international experts to ensure our projects meet global standards while respecting the planet.</div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="main-footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-name">
+        <div class="suryam-logo-footer"> <img src="images/suryam-group-logo-white.png" alt="Suryam Logo"/> </div>
+      </div>
+      <!--      <div class="footer-brand-desc">Ahmedabad's pioneer in luxury real estate since 1993. Building communities, not just houses.</div>--> 
+    </div>
+    <div>
+      <div class="footer-col-hd">Projects</div>
+      <div class="footer-lk"><a href="btw.html">By The Waters</a></div>
+	  <div class="footer-lk"><a href="sage.html">The Sage</a></div>
+      <div class="footer-lk">The Park</div>
+      <div class="footer-lk">Suryam Arnath</div>
+      <div class="footer-lk">Suryam Repose</div>
+      <div class="footer-lk">The Banyan</div>
+    </div>
+    <div>
+      <div class="footer-col-hd">Company</div>
+      <div class="footer-lk"><a href="about-suryam.html">About Suryam</a></div>
+	  <div class="footer-lk"><a href="team.html">Our Team</a></div>
+	  <div class="footer-lk"><a href="projects.html">Projects</a></div>
+      <div class="footer-lk">Awards & Media</div>
+    </div>
+    <div>
+      <div class="footer-col-hd">Connect</div>
+      <div class="footer-lk"><a href="partner-with-us.html">Partner With Us</a></div>
+      <div class="footer-lk"><a href="vendor-registration.html">Vendor Registration</a></div>
+      <div class="footer-lk"><a href="maintenance-query.html">Maintenance Query</a></div>
+      <div class="footer-lk"><a href="nris.html">NRI's</a></div>
+      
+      <div class="footer-lk"><a href="contact-us.html">Contact Us</a></div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 Suryam Group. All rights reserved. <a href="https://compubrain.com/" target="_blank" class="cb" title="Website Designed By CompuBrain"><img src="images/website-designed-by-compubrain.png" alt="CompuBrain Monogram"></a></div>
+    <div class="footer-copy">Privacy Policy &nbsp;·&nbsp; Terms of Use</div>
+  </div>
+</footer>
+
+<!-- JS --> 
+<script src="js/main.js"></script> 
+<!--<script src="js/loader.js"></script> -->  
+<script>
+const waBtn = document.getElementById("waBtn");
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+        waBtn.classList.add("show");
+    } else {
+        waBtn.classList.remove("show");
+    }
+});
+const section = document.getElementById("statsSection");
+const counters = document.querySelectorAll(".counter");
+let counted = false;
+function startCounter() {
+    counters.forEach(counter => {
+        const target = parseFloat(counter.getAttribute("data-target"));
+        let count = 0;
+        const speed = target / 100;
+        function updateCount() {
+            count += speed;
+            if (count < target) {
+                if (target % 1 !== 0) {
+                    counter.innerText = count.toFixed(1);
+                } else {
+                    counter.innerText = Math.ceil(count);
+                }
+                requestAnimationFrame(updateCount);
+            } else {
+                counter.innerText = target;
+            }
+        }
+        updateCount();
+    });
+}
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            section.classList.add("active");
+            if (!counted) {
+                startCounter();
+                counted = true;
+            }
+        } else {
+            section.classList.remove("active");
+            counted = false;
+            counters.forEach(counter => {
+                counter.innerText = "0";
+            });
+        }
+    });
+}, {
+    threshold: 0.4
+});
+observer.observe(section);
+</script> 
+</body>
+</html>

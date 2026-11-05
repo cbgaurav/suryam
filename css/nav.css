@@ -1,0 +1,184 @@
+/* ══════════════════════════════════
+   SURYAM GROUP — NAVIGATION
+══════════════════════════════════ */
+
+/* ── MAIN NAV ── */
+#mainNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  padding: 22px 52px;
+  transition: background 0.5s, padding 0.4s, border-color 0.4s;
+  border-bottom: 1px solid transparent;
+}
+#mainNav.scrolled {
+  background: rgba(26, 25, 24, 0.97);
+  padding: 14px 52px;
+  border-bottom-color: var(--border);
+  backdrop-filter: blur(16px);
+}
+
+/* Hamburger */
+.nav-ham {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 4px;
+}
+.nav-ham span {
+  display: block;
+  width: 22px;
+  height: 1px;
+  background: var(--beige);
+  transition: all 0.3s;
+}
+.nav-ham:hover span { background: var(--ochre); }
+
+/* Centred logo */
+.nav-logo-wrap {
+  position: absolute;
+/*
+  left: 50%;
+  transform: translateX(-50%);
+*/
+  text-align: center;
+  cursor: pointer;
+}
+.nav-logo-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 17px;
+  letter-spacing: 0.24em;
+  color: var(--ochre);
+  display: block;
+  line-height: 1;
+}
+.suryam-logo img {
+    max-width: 76px;
+    width: 100%;
+}
+#mainNav.scrolled .suryam-logo img{
+	max-width: 60px;
+}
+.nav-logo-sub {
+  font-size: 6px;
+  letter-spacing: 0.28em;
+  color: var(--text-muted);
+  display: block;
+  margin-top: 3px;
+  text-transform: uppercase;
+}
+
+/* CTA button */
+/*
+.nav-cta {
+  margin-left: auto;
+  font-size: 8px;
+  letter-spacing: 0.2em;
+  color: var(--ochre);
+  text-transform: uppercase;
+  border: 1px solid var(--ochre-dim);
+  padding: 8px 18px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+*/
+.right-menu {
+  margin-left: auto;
+  font-size: 8px;
+  letter-spacing: 0.2em;
+  color: var(--ochre);
+  text-transform: uppercase;
+/*  border: 1px solid var(--ochre-dim);*/
+  padding: 8px 0px;
+  cursor: pointer;
+  transition: all 0.3s;
+	display: flex;
+	gap:25px;
+	align-items: center;
+    
+}
+
+.right-menu-item a{
+  margin-left: auto;
+  font-size: 8px;
+  letter-spacing: 0.2em;
+  color: var(--ochre);
+  text-transform: uppercase;
+  border: 1px solid var(--ochre-dim);
+  padding: 8px 18px;
+  cursor: pointer;
+  transition: all 0.3s;
+	text-decoration: none;
+}
+.right-menu-item a:hover{
+	background: var(--ochre); color: var(--bg);
+}
+/*.nav-cta:hover { background: var(--ochre); color: var(--bg); }*/
+
+/* ── MENU OVERLAY ── */
+.menu-ov {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 9, 8, 0.97);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s;
+}
+.menu-ov.open { opacity: 1; pointer-events: all; }
+
+.menu-close {
+  position: absolute;
+  top: 26px;
+  right: 52px;
+  font-size: 8px;
+  letter-spacing: 0.2em;
+  color: var(--text-muted);
+  cursor: pointer;
+  text-transform: uppercase;
+  border: 1px solid var(--border2);
+  padding: 8px 16px;
+  transition: all 0.3s;
+}
+.menu-close:hover { border-color: var(--ochre); color: var(--ochre); }
+
+.menu-links { text-align: center; }
+.menu-link, .menu-link a {
+  display: block;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 48px;
+  font-weight: 300;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  line-height: 1.4;
+  transition: color 0.3s, transform 0.3s;
+	text-decoration: none
+}
+.menu-link:hover { color: var(--ochre2); transform: translateX(10px); }
+.menu-link a:hover { color: var(--ochre2); transform: translateX(10px); }
+.menu-divider {
+  width: 40px;
+  height: 1px;
+  background: var(--border2);
+  margin: 16px auto;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  #mainNav { padding: 16px 24px; }
+  #mainNav.scrolled { padding: 12px 24px; }
+  .menu-close { right: 24px; }
+  .menu-link { font-size: 36px; }
+}
+
+

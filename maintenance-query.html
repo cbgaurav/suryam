@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suryam Group — Trust & Happiness</title>
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<!-- CSS -->
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+<!-- ── WHATSAPP ── -->
+<div class="wa-btn" id="waBtn">
+  <svg viewBox="0 0 24 24">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</div>
+
+<!-- ── MAIN NAV ── -->
+<nav id="mainNav">
+  <div class="nav-logo-wrap" onclick="showPage('home')"> <span class="nav-logo-text">
+    <div class="suryam-logo"><a href="index.html"> <img src="images/suryam-group-logo-white.png" alt="Suryam Logo"/> </a></div>
+    </span> </div>
+  <div class="nav-cta right-menu" onclick="goContact()">
+    <div class="right-menu-item"><a href="contact-us.html">Contact Us</a></div>
+    <div class="nav-ham" onclick="toggleMenu()"> <span></span><span></span><span></span> </div>
+  </div>
+</nav>
+
+<!-- ── MENU OVERLAY ── -->
+<div class="menu-ov" id="menuOv">
+  <div class="menu-close" onclick="toggleMenu()">✕ &nbsp;Close</div>
+  <div class="menu-links"> 
+    <!--
+    <div class="menu-link" onclick="navTo('home')">Homepage</div>
+    <div class="menu-divider"></div>
+-->
+    <div class="menu-link"><a href="about-suryam.html">About Suryam</a></div>
+    <div class="menu-link"><a href="team.html">Our Team</a></div>
+    <div class="menu-link"><a href="projects.html">Projects</a></div>
+    <div class="menu-divider"></div>
+    <div class="menu-link"><a href="btw.html">By The Waters</a></div>
+    <div class="menu-link"><a href="sage.html">The Sage</a></div>
+    <div class="menu-link">The Park</div>
+    <div class="menu-link">Suryam Arnath</div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     PAGE: HOME
+     Inject into #page-home
+══════════════════════════════════════ --> 
+
+<!-- HERO -->
+<div class="page-hero">
+  <div class="page-hero-vlines">
+    <div class="ph-vl"></div>
+    <div class="ph-vl"></div>
+    <div class="ph-vl"></div>
+  </div>
+  <!--  <div class="ph-year-bg">2025</div>-->
+  <div> 
+    <!--    <div class="s-tag" style="margin-bottom:18px">Our Portfolio</div>-->
+    <div class="ph-title">Maintenance Query</div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="sec rv" id="home-contact">
+  <div class="two-col align-items-start">
+    <div> 
+      <!--      <div class="s-tag">Get In Touch</div>-->
+      <div class="s-title">Property Maintenance</div>
+      <div class="s-div"></div>
+      <div class="s-body">Facing a problem in your building’s maintenance?<br>
+        Drop us a message and we will get to work right away. </div>
+    </div>
+    <div class="common-form">
+      <form method="post" action="thankyou.php" class="Maintenance_Query" id="Maintenance_Query">
+        <input type="text" id="name" name="name" placeholder="Name*">
+        <input type="text" name="contact_no" placeholder="Mobile No.*" onkeypress="contact_num_valid(event)" id="contact_no" minlength="10" maxlength="15">
+        <input type="email" id="email" name="email" placeholder="Email ID*">
+        <select id="project" name="project" class="contact-input" style="appearance:none;cursor:pointer">
+          <option value="" disabled="" selected="">Project of Interest</option>
+          <option>By The Waters</option>
+          <option>The Sage</option>
+          <option>The Park</option>
+          <option>Suryam Arnath</option>
+          <option>Other</option>
+        </select>
+        <input type="text" id="unit_number" name="unit_number" placeholder="Unit Number*">
+        <select id="select_category" name="select_category" class="contact-input" style="appearance:none;cursor:pointer">
+          <option value="">Select Category*</option>
+          <option value="Electrician"> Electrician </option>
+          <option value="Plumbing"> Plumbing </option>
+          <option value="Common Area"> Common Area </option>
+          <option value="Parking"> Parking </option>
+          <option value="Elevator Service"> Elevator Service </option>
+          <option value="Landscaping"> Landscaping </option>
+          <option value="Security"> Security </option>
+          <option value="Housekeeping"> Housekeeping </option>
+          <option value="Others"> Others </option>
+        </select>
+        <div class="form-group">
+          <div class="file-wrapper">
+            <input type="file" id="upload_images" name="upload_images">
+            <span class="file-button"> <span class="file-holder"></span> Upload Images Attachment*</span> </div>
+        </div>
+        <textarea id="message" name="message" placeholder="Write Message"></textarea>
+        <p id="error_data"></p>
+        <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response">
+        <button class="contact-submit" type="submit" name="Maintenance_Query">Send Enquiry</button>
+        <input type="hidden" value="Maintenance_Query" name="type_of_form">
+        <i class="fa fa-sync" id="form_process"></i>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="main-footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-name">
+        <div class="suryam-logo-footer"> <img src="images/suryam-group-logo-white.png" alt="Suryam Logo"/> </div>
+      </div>
+      <!--      <div class="footer-brand-desc">Ahmedabad's pioneer in luxury real estate since 1993. Building communities, not just houses.</div>--> 
+    </div>
+    <div>
+      <div class="footer-col-hd">Projects</div>
+      <div class="footer-lk"><a href="btw.html">By The Waters</a></div>
+      <div class="footer-lk"><a href="sage.html">The Sage</a></div>
+      <div class="footer-lk">The Park</div>
+      <div class="footer-lk">Suryam Arnath</div>
+      <div class="footer-lk">Suryam Repose</div>
+      <div class="footer-lk">The Banyan</div>
+    </div>
+    <div>
+      <div class="footer-col-hd">Company</div>
+      <div class="footer-lk"><a href="about-suryam.html">About Suryam</a></div>
+      <div class="footer-lk"><a href="team.html">Our Team</a></div>
+      <div class="footer-lk"><a href="projects.html">Projects</a></div>
+      <div class="footer-lk">Awards & Media</div>
+    </div>
+    <div>
+      <div class="footer-col-hd">Connect</div>
+      <div class="footer-lk"><a href="partner-with-us.html">Partner With Us</a></div>
+      <div class="footer-lk"><a href="vendor-registration.html">Vendor Registration</a></div>
+      <div class="footer-lk"><a href="maintenance-query.html">Maintenance Query</a></div>
+      <div class="footer-lk"><a href="nris.html">NRI's</a></div>
+      
+      <div class="footer-lk"><a href="contact-us.html">Contact Us</a></div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 Suryam Group. All rights reserved. <a href="https://compubrain.com/" target="_blank" class="cb" title="Website Designed By CompuBrain"><img src="images/website-designed-by-compubrain.png" alt="CompuBrain Monogram"></a></div>
+    <div class="footer-copy">Privacy Policy &nbsp;·&nbsp; Terms of Use</div>
+  </div>
+</footer>
+
+<!-- JS --> 
+<script src="js/main.js"></script> 
+<!--<script src="js/loader.js"></script> --> 
+
+<script>
+const waBtn = document.getElementById("waBtn");
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+        waBtn.classList.add("show");
+    } else {
+        waBtn.classList.remove("show");
+    }
+});
+</script> 
+<script type="text/javascript">
+var SITE = SITE || {};
+
+SITE.fileInputs = function () {
+    var $this = this,
+        $val = $this.value,
+        valArray = $val.split('\\'),
+        newVal = valArray[valArray.length - 1],
+        $button = $this.parentNode.querySelector('.file-button'),
+        $fakeFile = $this.parentNode.querySelector('.file-holder');
+
+    if (newVal !== '') {
+        $button.innerHTML = 'Images Attachment Uploaded';
+
+        if (!$fakeFile) {
+            var span = document.createElement('span');
+            span.className = 'file-holder';
+            span.textContent = newVal;
+            $button.insertAdjacentElement('afterend', span);
+        } else {
+            $fakeFile.textContent = newVal;
+        }
+    }
+};
+
+document.addEventListener('DOMContentLoaded', function () {
+    var fileInputs = document.querySelectorAll('.file-wrapper input[type="file"]');
+
+    fileInputs.forEach(function (input) {
+        ['change', 'focus', 'click'].forEach(function (event) {
+            input.addEventListener(event, SITE.fileInputs);
+        });
+    });
+});
+</script>
+</body>
+</html>

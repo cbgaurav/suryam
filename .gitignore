@@ -1,0 +1,14 @@
+video
+Suryam
+images
+/video/
+/Suryam/
+/images/
+
+# Ignore large media files
+*.mp4
+*.mov
+*.avi
+
+# Ignore large PDF files (optional)
+*.pdf

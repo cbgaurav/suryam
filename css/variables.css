@@ -1,0 +1,26 @@
+/* ══════════════════════════════════
+   SURYAM GROUP — CSS VARIABLES
+══════════════════════════════════ */
+:root {
+  /* Suryam palette */
+  --bg: #1a1918;
+  --bg2: #141312;
+  --bg3: #222018;
+  --bg4: #2a2720;
+  --ochre: #c19452;
+  --ochre2: #d4aa6a;
+  --ochre-dim: #6b5228;
+  --beige: #cec7c2;
+  --beige2: #e8e2da;
+  --white: #f5f0e8;
+  --text-muted: #8a8178;
+  --text-dim: #5a5550;
+  --border: #2e2b26;
+  --border2: #3a3630;
+
+  /* Project pages (white bg) */
+  --proj-bg: #ffffff;
+  --proj-text: #1a1918;
+  --proj-muted: #6b6560;
+  --proj-border: #e8e4de;
+}

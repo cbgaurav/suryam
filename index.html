@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suryam Group — Trust & Happiness</title>
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<!-- CSS -->
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/pages.css">
+<link rel="stylesheet" href="css/project-pages.css">
+<style>
+	
+.archived-projects .project-content {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 16px;
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
+.archived-projects h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 300;
+    color: var(--white);
+    margin-bottom: 4px;
+}
+.archived-projects .project-content p {
+    margin-bottom: 6px;
+}
+.archived-projects .project-content p:last-child {
+    margin-bottom: 0;
+}
+.home-title {
+    font-size: 50px;
+    margin: 0 auto;    
+}	
+	.about-video {
+    position: relative;
+}
+.about-video video
+ {
+    height: 500px;
+    object-fit: cover;
+	 width: 100%;
+}	
+	
+	.article-carousel .slide img{
+		object-fit: contain;
+	}
+/*
+	.article-carousel .slide {
+    background: #f1ece6;
+}
+*/
+	
+	.all-nav {
+    background: rgb(249 249 249);    
+}
+.all-nav img {
+    filter: invert(0);
+	opacity: 0.4
+}
+	
+.proj-prev-arrow {
+    text-align: right;
+    margin-top: 0;
+    cursor: pointer;
+    line-height: 0;
+}
+	.proj-prev-arrow img {
+    width: 32px;
+    filter: invert(1);
+}
+
+	.dot {
+    background: transparent;
+    border: 1px solid #bdbdbd;
+}
+	
+</style>
+</head>
+<body>
+
+<!-- ── WHATSAPP ── -->
+<div class="wa-btn" id="waBtn">
+  <svg viewBox="0 0 24 24">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</div>
+
+<!-- ── MAIN NAV ── -->
+<nav id="mainNav">
+  <div class="nav-logo-wrap" onclick="showPage('home')"> <span class="nav-logo-text">
+    <div class="suryam-logo"><a href="index.html"> <img src="images/suryam-group-logo-white.png" alt="Suryam Logo"/> </a></div>
+    </span> </div>
+  <div class="nav-cta right-menu" onclick="goContact()">
+    <div class="right-menu-item"><a href="contact-us.html">Contact Us</a></div>
+    <div class="nav-ham" onclick="toggleMenu()"> <span></span><span></span><span></span> </div>
+  </div>
+</nav>
+
+<!-- ── MENU OVERLAY ── -->
+<div class="menu-ov" id="menuOv">
+  <div class="menu-close" onclick="toggleMenu()">✕ &nbsp;Close</div>
+  <div class="menu-links"> 
+    <!--
+    <div class="menu-link" onclick="navTo('home')">Homepage</div>
+    <div class="menu-divider"></div>
+-->
+	<div class="menu-link"><a href="about-suryam.html">About Suryam</a></div>
+	<div class="menu-link"><a href="team.html">Our Team</a></div>
+	<div class="menu-link"><a href="projects.html">Projects</a></div>
+	<div class="menu-divider"></div>
+	<div class="menu-link"><a href="btw.html">By The Waters</a></div>
+	<div class="menu-link"><a href="sage.html">The Sage</a></div>
+	<div class="menu-link">The Park</div>
+	<div class="menu-link">Suryam Arnath</div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     PAGE: HOME
+     Inject into #page-home
+══════════════════════════════════════ --> 
+
+<!-- HERO -->
+<div class="hero">
+  <div class="banner-video">
+    <video
+    width="100%"
+    height="100%"
+    loop
+    autoplay
+    playsinline
+    muted
+    controlslist="nodownload nofullscreen noremoteplayback"
+    poster="video/banner-poster.jpg"
+    class="video cover video-player"
+  >
+      <source src="video/banner-video.mp4" type="video/mp4" />
+    </video>
+    <div class="audio-controls">
+      <svg class="icon-muted" aria-label="Audio is muted" fill="currentColor" height="14" width="14" viewBox="0 0 48 48">
+        <title>Muted</title>
+        <path clip-rule="evenodd" fill-rule="evenodd" d="M1.5 13.3c-.8 0-1.5.7-1.5 1.5v18.4c0 .8.7 1.5 1.5 1.5h8.7l12.9 12.9c.9.9 2.5.3 2.5-1v-9.8c0-.4-.2-.8-.4-1.1l-22-22c-.3-.3-.7-.4-1.1-.4h-.6zm46.8 31.4-5.5-5.5C44.9 36.6 48 31.4 48 24c0-11.4-7.2-17.4-7.2-17.4-.6-.6-1.6-.6-2.2 0L37.2 8c-.6.6-.6 1.6 0 2.2 0 0 5.7 5 5.7 13.8 0 5.4-2.1 9.3-3.8 11.6L35.5 32c1.1-1.7 2.3-4.4 2.3-8 0-6.8-4.1-10.3-4.1-10.3-.6-.6-1.6-.6-2.2 0l-1.4 1.4c-.6.6-.6 1.6 0 2.2 0 0 2.6 2 2.6 6.7 0 1.8-.4 3.2-.9 4.3L25.5 22V1.4c0-1.3-1.6-1.9-2.5-1L13.5 10 3.3-.3c-.6-.6-1.5-.6-2.1 0L-.2 1.1c-.6.6-.6 1.5 0 2.1L4 7.6l26.8 26.8 13.9 13.9c.6.6 1.5.6 2.1 0l1.4-1.4c.7-.6.7-1.6.1-2.2z"/>
+      </svg>
+      <svg class="icon-playing hidden" aria-label="Audio is playing" fill="currentColor" height="14" width="14" viewBox="0 0 24 24">
+        <title>Playing</title>
+        <path d="M16.636 7.028a1.5 1.5 0 10-2.395 1.807 5.365 5.365 0 011.103 3.17 5.378 5.378 0 01-1.105 3.176 1.5 1.5 0 102.395 1.806 8.396 8.396 0 001.71-4.981 8.39 8.39 0 00-1.708-4.978zm3.73-2.332A1.5 1.5 0 1018.04 6.59 8.823 8.823 0 0120 12.007a8.798 8.798 0 01-1.96 5.415 1.5 1.5 0 002.326 1.894 11.672 11.672 0 002.635-7.31 11.682 11.682 0 00-2.635-7.31zm-8.963-3.613a1.001 1.001 0 00-1.082.187L5.265 6H2a1 1 0 00-1 1v10.003a1 1 0 001 1h3.265l5.01 4.682.02.021a1 1 0 001.704-.814L12.005 2a1 1 0 00-.602-.917z"/>
+      </svg>
+    </div>
+  </div>
+  
+  <!--
+  <div class="hero-vid">
+  <div class="hero-vid-label">[ Full-Bleed Video — Hero Reel ]</div>
+  </div>
+-->
+  <div class="hero-overlay"></div>
+  <!--
+  <div class="hero-water">
+    <div class="wl"></div>
+    <div class="wl"></div>
+    <div class="wl"></div>
+    <div class="wl"></div>
+  </div>
+  <div class="hero-year">1993</div>
+  <div class="hero-scroll-line">
+    <div class="scroll-lbl">Scroll</div>
+    <div class="scroll-bar"></div>
+  </div>
+-->
+  
+  <div class="hero-content">
+    <div class="banner-text"> 
+      <!--		  <div class="btn-border banner-btn"><a href="javascript:void(0);">Explore Our Projects</a></div>	  -->
+      <div class="project-logo"> <a href="https://bythewaters.in/" target="_blank"><img src="images/projects-logo/repose-by-the-waters.png" alt=""/> </a> </div>
+      <!--		  <div class="btn-border banner-btn"><a href="javascript:void(0);">Contact Us</a></div>--> 
+    </div>
+    
+    <!--
+    <div class="s-tag">Ahmedabad · Est. 1993</div>
+    <div class="s-title" style="font-size:64px;color:var(--white)">Suryam<br>
+      Group</div>
+    <div style="font-size:9px;letter-spacing:0.28em;color:var(--text-muted);text-transform:uppercase;margin-top:8px">Trust &amp; Happiness</div>
+--> 
+    
+  </div>
+</div>
+<div class="sec sec-alt rv" style="text-align:center">
+  <div class="home-about-text"> 
+    <!--  <div class="s-tag" style="text-align:center">Our Purpose</div>-->
+    <div class="s-title home-title text-center">There is a kind of developer who builds to the brief. And a kind who rewrites it. </div>
+    <div class="s-div" style="margin:18px auto"></div>
+    <div class="s-body" style="margin:0 auto;text-align:justify">Since 1993, Suryam has belonged to the second category ‚bringing together ecologists, water engineers, botanists, and international architects around each project before a single wall is drawn, then asking a question most developers never think to ask: what does this land want to become? </div>
+    <blockquote class="fancy" style="margin:28px auto;text-align:justify">The answer has taken different forms across three decades. Nature communities of 150 acres. A private waterfront estate arranged around a living, engineered lake. Courtyard villas in a forest clearing. An urban address that has quietly renewed one of Ahmedabad's most storied neighbourhoods. But the method has never changed: start with the land, follow its lead, and build something that the site itself would have asked for. </blockquote>
+    <div class="s-body text-center">This discipline is what more than 4,000 families have chosen to live inside. It is what we are still building.</div>
+	  
+	  <div style="margin-top:26px">
+        <div class="btn-border"><a href="about-suryam.html">Read More</a></div>
+      </div>
+  </div>
+</div>
+
+<!-- OUR PROJECTS — Ongoing / Completed tabs -->
+<div class="sec rv"> 
+  <!--  <div class="s-tag">What We Build</div>-->
+  <div class="s-title">Our Projects</div>
+  <div class="s-div"></div>
+  <!--
+  <div class="proj-tabs" style="margin-top:32px">
+    <div class="proj-tab active" onclick="switchTab(this,'ongoing')">Ongoing Projects</div>
+    <div class="proj-tab" onclick="switchTab(this,'completed')">Completed Projects</div>
+	<div class="proj-tab" onclick="switchTab(this,'archived')">Archived Projects</div>
+  </div>
+-->
+  <div class="proj-tabs" style="margin-top:32px">
+    <div class="proj-tab active" onclick="switchProjTab(this,'ongoing-proj')"> Ongoing  </div>
+    <div class="proj-tab" onclick="switchProjTab(this,'completed-proj')"> Completed  </div>
+    <div class="proj-tab" onclick="switchProjTab(this,'archived-proj')" style="opacity: 0; pointer-events: none"> Previous  </div>
+  </div>
+  
+  <!-- ONGOING tab -->
+  <div id="tab-ongoing-proj">
+	 
+	  
+	  
+  <style>
+
+.ongoing-proj{
+    width:100%;    
+}
+
+	  
+	  
+.project-item {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    align-items: center;
+    margin-bottom: 50px;
+}
+	  
+.project-item:last-child {
+    margin-bottom: 0px;
+}
+
+/* Image */
+
+.project-image img {
+    width: 100%;
+    display: block;
+    height: 520px;
+    object-fit: cover;
+}
+
+/* Content */
+
+.ongoing-proj .project-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Heading at top/center, text at bottom */
+    height: 100%;
+    padding-left: 80px;
+    text-align: right;
+}
+.project-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+	gap: 35px;
+}
+.project-title-home{
+/*    margin: auto 0 0; */
+	/* Vertically centers the heading section */
+}
+.ongoing-proj .project-content p {
+/*    margin-top: auto;*/
+    color: #bdbdbd;
+    line-height: 23px;
+    font-size: 14px;
+    text-align: justify;
+    text-align-last: end;
+}  
+.ongoing-proj .project-content h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size: 42px;
+    font-weight:400;
+    margin-bottom:5px;
+	color: #c09452;
+}
+
+.ongoing-proj .project-content span {
+    display: block;
+        color: #bdbdbd;
+    letter-spacing: 2px;
+    font-size: 14px;
+    margin-bottom: 0;
+	text-transform: uppercase;
+}
+
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.project-item{
+    grid-template-columns:1fr;
+}
+
+.ongoing-proj .project-content{
+    max-width:100%;
+}
+
+.ongoing-proj .project-content h2{
+    font-size:42px;
+}
+
+
+}
+
+@media(max-width:576px){
+
+.ongoing-proj{
+    width:92%;
+    margin:50px auto;
+}
+.ongoing-proj .project-content h2{
+    font-size:34px;
+}
+
+.ongoing-proj .project-content p{
+    font-size:14px;
+}
+
+}
+		  </style>
+	  
+	  		
+<div class="ongoing-proj projects">
+    <div class="project-item">
+        <div class="project-image">
+            <img src="images/projects/repose-by-the-waters.jpg" class="img-suryam" alt=""/>
+        </div>
+        <div class="project-content">
+			<div class="project-block">
+            <div class="project-title-home">
+				<h2>By The Waters</h2>
+				<span>WHERE YOU BELONG</span>
+			</div>
+            <p>
+                Defined by its remarkable waterfront setting,
+                By The Waters is a private enclave of rare
+                character. Here, considered architecture and
+                expansive landscapes come together to create
+                a way of living that feels quietly exceptional.
+            </p>
+			</div>
+        </div>
+    </div>
+	
+	
+	
+	<div class="project-item">
+        <div class="project-image">
+            <img src="images/projects/the-sage-by-repose.jpg" class="img-suryam" alt=""/>
+        </div>
+        <div class="project-content">
+			<div class="project-block">
+            <div class="project-title-home">
+				<h2>The Sage </h2>
+				<span>By Repose</span>
+			</div>
+            <p>
+                The Sage is a thoughtfully planned residential community where intelligent planning, generous green spaces, and a close relationship with nature shape a quieter way of living.
+            </p>
+			</div>
+        </div>
+    </div>
+	
+	
+	<div class="project-item">
+        <div class="project-image">
+            <img src="images/projects/the-park-by-repose.jpg" class="img-suryam" alt=""/>
+        </div>
+        <div class="project-content">
+			<div class="project-block">
+            <div class="project-title-home">
+				<h2>The Park</h2>
+				<span>By Repose</span>
+			</div>
+            <p>
+                Life can either be measured in years or in experiences. The Park by Repose is for those who believe in the later. It is a first home created for effortless suburban living, replete with exhilarating experiences for the whole family.
+
+            </p>
+			</div>
+        </div>
+    </div>
+	
+	
+	<div class="project-item">
+        <div class="project-image">
+            <img src="images/projects/suryam-arnath.jpg" class="img-suryam" alt=""/>
+        </div>
+        <div class="project-content">
+			<div class="project-block">
+            <div class="project-title-home">
+				<h2>Suryam Arnath</h2>
+				<span>3 & 3.5 BHK Lifestyle Apartments</span>
+			</div>
+            <p>
+                Elevate your living experience in a 14-storey luxurious residential redevelopment project, offering exquisite 3 & 3.5 BHK apartments adorned with balconies that unveil breath taking views. Nestled in close proximity to the Sabarmati Riverfront, this haven seamlessly merges urban living with natural beauty.
+
+            </p>
+			</div>
+        </div>
+    </div>
+	
+	
+</div>
+	  		
+
+	  
+<!--
+    <div class="two-col">
+      <div class="proj-card-large" onclick="showPage('btw')">
+        <div class="proj-card-large-bg" style="background:linear-gradient(135deg,#070d16 0%,#0b1825 100%)">
+          <div class="home-project"> <img src="images/projects/repose-by-the-waters.jpg" class="img-suryam" alt=""/> </div>
+        </div>
+        <div class="proj-card-large-overlay"></div>
+        <div class="proj-card-large-content"> 
+          <div class="proj-name">By The Waters</div>
+          <div class="proj-sub">Where You Belong</div>
+	      <div class="proj-explore"><a href="btw.html">Explore Project</a></div>
+        </div>
+      </div>
+      <div class="proj-card-large" onclick="showPage('sage')">
+        <div class="proj-card-large-bg" style="background:linear-gradient(135deg,#0a1209 0%,#101808 100%)"> 
+          <div class="home-project"> <img src="images/projects/the-sage-by-repose.jpg" class="img-suryam" alt=""/> </div>
+        </div>
+        <div class="proj-card-large-overlay"></div>
+        <div class="proj-card-large-content"> 
+          <div class="proj-name">The Sage</div>
+          <div class="proj-sub">By Repose</div>
+			<div class="proj-explore"><a href="sage.html">Explore Project</a></div>
+        </div>
+      </div>
+      <div class="proj-card-large">
+        <div class="proj-card-large-bg" style="background:var(--bg3)">
+          <div class="home-project"> <img src="images/projects/the-park-by-repose.jpg" class="img-suryam" alt=""/> </div>
+        </div>
+        <div class="proj-card-large-overlay"></div>
+        <div class="proj-card-large-content"> 
+          <div class="proj-name">The Park</div>
+          <div class="proj-sub">By Repose</div>
+		  <div class="proj-explore"><a href="javascript:void(0);">Explore Project</a></div>
+        </div>
+      </div>
+      <div class="proj-card-large">
+        <div class="proj-card-large-bg" style="background:var(--bg3)">
+          <div class="home-project"> <img src="images/projects/suryam-arnath.jpg" class="img-suryam" alt=""/> </div>
+        </div>
+        <div class="proj-card-large-overlay"></div>
+        <div class="proj-card-large-content"> 
+          <div class="proj-name">Suryam Arnath</div>
+          <div class="proj-sub">3 & 3.5 BHK Lifestyle Apartments</div>
+		  <div class="proj-explore"><a href="javascript:void(0);">Explore Project</a></div>
+        </div>
+      </div>
+    </div>
+-->
+	  
+	  
+  </div>
+  
+  <!-- COMPLETED tab -->
+  <div id="tab-completed-proj" style="display:none">
+    <div class="three-col">
+      <div class="proj-card-large" style="height:400px;cursor:default">
+        <div class="proj-card-large-bg" style="background:var(--bg3)">
+          <div class="home-project"> <img src="images/projects/suryam-repose.jpg" class="img-suryam" alt=""/> </div>
+        </div>
+        <div class="proj-card-large-overlay"></div>
+        <div class="proj-card-large-content">
+          <div class="proj-name" style="font-size:22px">Suryam Repose</div>
+          <div class="proj-sub">Completed</div>
+        </div>
+      </div>
+      <div class="proj-card-large" style="height:400px;cursor:default">
+        <div class="proj-card-large-bg" style="background:var(--bg3)">
+          <div class="home-project"> <img src="images/projects/the-banyan.jpg" class="img-suryam" alt=""/> </div>
+        </div>
+        <div class="proj-card-large-overlay"></div>
+        <div class="proj-card-large-content">
+          <div class="proj-name" style="font-size:22px">The Banyan</div>
+          <div class="proj-sub">Completed</div>
+        </div>
+      </div>
+		
+		<div class="proj-card-large old-project" style="height:400px;" onclick="switchProjTab(this,'archived-proj')">
+          <div class="proj-card-large-bg" style="background:var(--bg3)">
+            
+          </div>
+<!--          <div class="proj-card-large-overlay"></div>-->
+          <div class="proj-card-large-content">
+            <div class="proj-name old-project-text" style="font-size:22px">Old Projects <div class="proj-prev-arrow"><img src="images/right-arrow.png" alt=""/></div></div>
+          </div>
+        </div>
+
+		
+<!--
+      <div class="proj-card-large" style="height:400px;cursor:default">
+        <div class="proj-card-large-bg" style="background:var(--bg3)">
+          <div class="home-project"> <img src="images/projects/suryam-ananta.jpg" class="img-suryam" alt=""/> </div>
+        </div>
+        <div class="proj-card-large-overlay"></div>
+        <div class="proj-card-large-content">
+          <div class="proj-name" style="font-size:22px">Suryam Ananta</div>
+          <div class="proj-sub">Completed</div>
+        </div>
+      </div>
+-->
+    </div>
+<!--	<div class="proj-prev-arrow"><img src="images/right-arrow.png" alt=""/></div> -->
+  </div>
+  
+  <!-- COMPLETED tab -->
+  <div id="tab-archived-proj" style="display:none">
+    <div class="three-col archived-projects">
+		
+		<div class="project-card">
+          <div class="project-content">
+            <h3>Suryam Ananta</h3>
+            <p>Vastral (2024) | 3 BHK exlcusive living and retail spaces</p>
+            <p>Designed to provide comfortable everyday living for families.</p>
+          </div>
+        </div>
+		
+		
+		
+      <div class="project-card">
+        <div class="project-content">
+          <h3>Suryam Sky</h3>
+          <p>Vastral (2012) | 2BHK Apartments</p>
+          <p>Designed to provide comfortable everyday living for families.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-content">
+          <h3>Suryam Bungalows</h3>
+          <p>Nikol (2009) | Twin Bungalows</p>
+          <p>Built for families who value privacy and independent living.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-content">
+          <h3>Suryam Sukriti Bungalows</h3>
+          <p>Thaltej (2006) | 4BHK Bungalows</p>
+          <p>Built to give larger families the space and comfort they need.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-content">
+          <h3>Surya Ami Apartment</h3>
+          <p>Ranip (2002) | 1 &amp; 2BHK</p>
+          <p>A practical home for small families and working individuals.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-content">
+          <h3>Suryaketu Apartment</h3>
+          <p>Bodakdev (1997) | 3 &amp; 4BHK</p>
+          <p>Spacious homes built to grow with your family.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-content">
+          <h3>Suryam Flora</h3>
+          <p>Nikol (2016) | 4BHK Lifestyle Apartments</p>
+          <p>Focused on providing a comfortable and modern living experience.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-content">
+          <h3>Suryam Greens</h3>
+          <p>Vastral (2013) | 1, 2 &amp; 3BHK</p>
+          <p>A home for every family size, all in one community.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-content">
+          <h3>Suryam Square</h3>
+          <p>Vastral (2013) | Commercial</p>
+          <p>A reliable commercial address for businesses of all kinds.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-content">
+          <h3>Suryam Plaza</h3>
+          <p>Khathwada (2012) | Commercial Property</p>
+          <p>A solid foundation for businesses looking to set up and grow.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- STATS BAR --> 
+<!-- HTML --> 
+<!--
+<div class="stats-bar rv" id="statsSection">
+  <div class="stat-item">
+    <div class="stat-num counter" data-target="30">0</div>
+    <div class="stat-lbl">Year's Experience</div>
+  </div>
+
+  <div class="stat-item">
+    <div class="stat-num counter" data-target="5000">0</div>
+    <div class="stat-lbl">Happy Suryam Families</div>
+  </div>
+
+  <div class="stat-item">
+    <div class="stat-num" style="font-size:36px">
+      <span class="counter" data-target="9.6">0</span>M
+      <span style="font-size:18px"> sq.ft</span>
+    </div>
+    <div class="stat-lbl">Development</div>
+  </div>
+
+  <div class="stat-item">
+    <div class="stat-num counter" data-target="25">0</div>
+    <div class="stat-lbl">Successful Projects</div>
+  </div>
+
+  <div class="stat-item">
+    <div class="stat-num" style="font-size:30px">
+      INR <span class="counter" data-target="10">0</span>M
+    </div>
+    <div class="stat-lbl">Worth Projects</div>
+  </div>
+</div>
+--> 
+
+	
+
+	
+	
+<!-- ABOUT SURYAM GROUP -->
+<div class="home-about rv sec-alt">
+  <div class="two-col home-video-col">
+      <div class="about-video">
+        <video
+    width="100%"
+    height="100%"
+    loop
+    autoplay
+    playsinline
+    muted
+    controlslist="nodownload nofullscreen noremoteplayback"
+    poster="video/banner-poster.jpg"
+    class="video cover video-player"
+  >
+          <source src="video/about-suryam-luxury-film.mp4" type="video/mp4" />
+        </video>
+        <div class="audio-controls">
+          <svg class="icon-muted" aria-label="Audio is muted" fill="currentColor" height="14" width="14" viewBox="0 0 48 48">
+            <title>Muted</title>
+            <path clip-rule="evenodd" fill-rule="evenodd" d="M1.5 13.3c-.8 0-1.5.7-1.5 1.5v18.4c0 .8.7 1.5 1.5 1.5h8.7l12.9 12.9c.9.9 2.5.3 2.5-1v-9.8c0-.4-.2-.8-.4-1.1l-22-22c-.3-.3-.7-.4-1.1-.4h-.6zm46.8 31.4-5.5-5.5C44.9 36.6 48 31.4 48 24c0-11.4-7.2-17.4-7.2-17.4-.6-.6-1.6-.6-2.2 0L37.2 8c-.6.6-.6 1.6 0 2.2 0 0 5.7 5 5.7 13.8 0 5.4-2.1 9.3-3.8 11.6L35.5 32c1.1-1.7 2.3-4.4 2.3-8 0-6.8-4.1-10.3-4.1-10.3-.6-.6-1.6-.6-2.2 0l-1.4 1.4c-.6.6-.6 1.6 0 2.2 0 0 2.6 2 2.6 6.7 0 1.8-.4 3.2-.9 4.3L25.5 22V1.4c0-1.3-1.6-1.9-2.5-1L13.5 10 3.3-.3c-.6-.6-1.5-.6-2.1 0L-.2 1.1c-.6.6-.6 1.5 0 2.1L4 7.6l26.8 26.8 13.9 13.9c.6.6 1.5.6 2.1 0l1.4-1.4c.7-.6.7-1.6.1-2.2z"/>
+          </svg>
+          <svg class="icon-playing hidden" aria-label="Audio is playing" fill="currentColor" height="14" width="14" viewBox="0 0 24 24">
+            <title>Playing</title>
+            <path d="M16.636 7.028a1.5 1.5 0 10-2.395 1.807 5.365 5.365 0 011.103 3.17 5.378 5.378 0 01-1.105 3.176 1.5 1.5 0 102.395 1.806 8.396 8.396 0 001.71-4.981 8.39 8.39 0 00-1.708-4.978zm3.73-2.332A1.5 1.5 0 1018.04 6.59 8.823 8.823 0 0120 12.007a8.798 8.798 0 01-1.96 5.415 1.5 1.5 0 002.326 1.894 11.672 11.672 0 002.635-7.31 11.682 11.682 0 00-2.635-7.31zm-8.963-3.613a1.001 1.001 0 00-1.082.187L5.265 6H2a1 1 0 00-1 1v10.003a1 1 0 001 1h3.265l5.01 4.682.02.021a1 1 0 001.704-.814L12.005 2a1 1 0 00-.602-.917z"/>
+          </svg>
+        </div>
+      </div>      <!--		<span>Architectural Photography</span>--> 
+    
+    <div> 
+      <!--      <div class="s-tag">Suryam Group</div>-->
+      <div class="s-title">Founded in<br>
+        Excellence</div>
+      <div class="s-div"></div>
+      <div class="s-body">Founded in 1993, Suryam Group has been a pioneer in Ahmedabad's real estate landscape, driven by a commitment to exceeding customer expectations.</div>
+      <div style="margin-top:18px">
+        <div class="s-tag" style="margin-bottom:6px">Mission</div>
+        <div class="s-body">To redefine luxury living by offering approachable and limitless luxury through sustainable living spaces for thriving communities.</div>
+      </div>
+      <!--      <div style="margin-top:18px;display:flex;flex-wrap:wrap;gap:4px"> <span class="chip">Integrity</span> <span class="chip">Trust</span> <span class="chip">Inventiveness</span> <span class="chip">Environmental Consciousness</span> <span class="chip">Approachability</span> <span class="chip">Value</span> </div>-->
+      <div style="margin-top:26px">
+        <div class="btn-border" onclick="showPage('about')">Read More</div>
+      </div>
+    </div>
+  </div>
+</div>
+	
+	
+		<!-- Article -->
+<div class="psec rv white-bg">
+  <div class="carousel article-carousel">
+    <div class="slide active"> 
+		
+		<a href="https://www.instagram.com/p/DYwhNyHjDZc/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D&img_index=1" target="_blank"><img src="images/article/forbes-india.jpg" alt=""></a>
+      <!--
+      <div class="overlay"></div>
+      <div class="content">
+        <h2>Grand Clubhouse</h2>
+        <p>World-class recreational spaces designed for relaxation and entertainment.</p>
+      </div>
+--> 
+    </div>
+    <div class="slide"> 
+		<a href="https://www.instagram.com/p/DYpEEUCkr3X/?img_index=1" target="_blank"><img src="images/article/ad-india.jpg" alt=""></a> 
+      <!--
+      <div class="overlay"></div>
+      <div class="content">
+        <h2>Premium Amenities</h2>
+        <p>Luxury facilities crafted to enhance your everyday lifestyle.</p>
+      </div>
+--> 
+    </div>
+    <div class="slide"> <a href="https://www.instagram.com/p/DYyzY9wjBo-/?img_index=1" target="_blank"><img src="images/article/robb-report-india.jpg" alt=""></a>
+      <!--
+      <div class="overlay"></div>
+      <div class="content">
+        <h2>Community Living</h2>
+        <p>Spaces that bring people together through comfort and elegance.</p>
+      </div>
+--> 
+    </div>
+	  
+	  
+	  
+	  
+	  
+	  
+	<div class="slide"> <a href="https://www.instagram.com/" target="_blank"><img src="images/article/design-pataki.jpg" alt=""></a></div>  
+	  
+	<div class="slide"> <a href="https://www.instagram.com/" target="_blank"><img src="images/article/decor.jpg" alt=""></a></div>
+	  
+	<div class="slide"> <a href="https://www.instagram.com/" target="_blank"><img src="images/article/stir.jpg" alt=""></a></div>
+	  
+	  
+    <button class="all-nav prev"><img src="images/left-arrow.png" alt=""/></button>
+    <button class="all-nav next"><img src="images/right-arrow.png" alt=""/></button>
+    <div class="dots"></div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="sec rv" id="home-contact">
+  <div class="two-col">
+    <div> 
+      <!--      <div class="s-tag">Get In Touch</div>-->
+      <div class="s-title">Begin Your<br>
+        Suryam Journey</div>
+      <div class="s-div"></div>
+      <div class="s-body">We'd love to hear from you. <br>
+Whether you're interested in our projects or want to learn more about Suryam Group, our team is here to help.</div>
+      <div class="call-details">
+        <div class="call-title">Phone</div>
+        <div class="call-text"><a href="tel:+919033117777">+91 90331 17777</a></div>
+        <div class="call-title">Email</div>
+        <div class="call-text"><a href="mailto:info@suryam.in" target="_blank">info@suryam.in</a></div>
+      </div>
+    </div>
+    <div>
+      <input class="contact-input" placeholder="Your Name" type="text">
+      <input class="contact-input" placeholder="Phone Number" type="tel">
+      <input class="contact-input" placeholder="Email Address" type="email">
+      <select class="contact-input" style="appearance:none;cursor:pointer">
+        <option value="" disabled selected>Project of Interest</option>
+        <option>By The Waters</option>
+        <option>The Sage</option>
+		<option>The Park</option>
+        <option>Suryam Arnath</option>  
+        <option>Other</option>
+      </select>
+      <button class="contact-submit">Send Enquiry</button>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="main-footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-name">
+        <div class="suryam-logo-footer"> <img src="images/suryam-group-logo-white.png" alt="Suryam Logo"/> </div>
+      </div>
+<!--      <div class="footer-brand-desc">Ahmedabad's pioneer in luxury real estate since 1993. Building communities, not just houses.</div>-->
+    </div>
+    <div>
+      <div class="footer-col-hd">Projects</div>
+      <div class="footer-lk"><a href="btw.html">By The Waters</a></div>
+	  <div class="footer-lk"><a href="sage.html">The Sage</a></div>
+      <div class="footer-lk">The Park</div>
+      <div class="footer-lk">Suryam Arnath</div>
+      <div class="footer-lk">Suryam Repose</div>
+      <div class="footer-lk">The Banyan</div>
+    </div>
+    <div>
+      <div class="footer-col-hd">Company</div>
+      <div class="footer-lk"><a href="about-suryam.html">About Suryam</a></div>
+	  <div class="footer-lk"><a href="team.html">Our Team</a></div>
+	  <div class="footer-lk"><a href="projects.html">Projects</a></div>
+      <div class="footer-lk">Awards & Media</div>
+    </div>
+    <div>
+      <div class="footer-col-hd">Connect</div>
+      <div class="footer-lk"><a href="partner-with-us.html">Partner With Us</a></div>
+      <div class="footer-lk"><a href="vendor-registration.html">Vendor Registration</a></div>
+      <div class="footer-lk"><a href="maintenance-query.html">Maintenance Query</a></div>
+      <div class="footer-lk"><a href="nris.html">NRI's</a></div>
+	  	
+	  <div class="footer-lk"><a href="contact-us.html">Contact Us</a></div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 Suryam Group. All rights reserved. <a href="https://compubrain.com/" target="_blank" class="cb" title="Website Designed By CompuBrain"><img src="images/website-designed-by-compubrain.png" alt="CompuBrain Monogram"></a></div>
+    <div class="footer-copy">Privacy Policy &nbsp;·&nbsp; Terms of Use</div>
+  </div>
+</footer>
+
+<!-- JS --> 
+<script src="js/main.js"></script>
+<!--<script src="js/loader.js"></script> --> 
+
+<script>
+const allVideos = document.querySelectorAll('.banner-video, .about-video');
+
+allVideos.forEach(wrapper => {
+
+  const video = wrapper.querySelector('video');
+  const audioToggle = wrapper.querySelector('.audio-controls');
+  const iconMuted = wrapper.querySelector('.icon-muted');
+  const iconPlaying = wrapper.querySelector('.icon-playing');
+
+  // Toggle sound
+  audioToggle.addEventListener('click', () => {
+
+    // Mute all other videos first
+    allVideos.forEach(otherWrapper => {
+
+      const otherVideo = otherWrapper.querySelector('video');
+      const otherMutedIcon = otherWrapper.querySelector('.icon-muted');
+      const otherPlayingIcon = otherWrapper.querySelector('.icon-playing');
+
+      if(otherVideo !== video){
+        otherVideo.muted = true;
+
+        otherMutedIcon.classList.remove('hidden');
+        otherPlayingIcon.classList.add('hidden');
+      }
+    });
+
+    // Toggle current video
+    video.muted = !video.muted;
+
+    if(video.muted){
+      iconMuted.classList.remove('hidden');
+      iconPlaying.classList.add('hidden');
+    } else {
+      iconMuted.classList.add('hidden');
+      iconPlaying.classList.remove('hidden');
+    }
+
+    video.play();
+  });
+
+});
+</script> 
+<script>
+const waBtn = document.getElementById("waBtn");
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+        waBtn.classList.add("show");
+    } else {
+        waBtn.classList.remove("show");
+    }
+});
+const section = document.getElementById("statsSection");
+const counters = document.querySelectorAll(".counter");
+let counted = false;
+function startCounter() {
+    counters.forEach(counter => {
+        const target = parseFloat(counter.getAttribute("data-target"));
+        let count = 0;
+        const speed = target / 100;
+        function updateCount() {
+            count += speed;
+            if (count < target) {
+                if (target % 1 !== 0) {
+                    counter.innerText = count.toFixed(1);
+                } else {
+                    counter.innerText = Math.ceil(count);
+                }
+                requestAnimationFrame(updateCount);
+            } else {
+                counter.innerText = target;
+            }
+        }
+        updateCount();
+    });
+}
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            section.classList.add("active");
+            if (!counted) {
+                startCounter();
+                counted = true;
+            }
+        } else {
+            section.classList.remove("active");
+            counted = false;
+            counters.forEach(counter => {
+                counter.innerText = "0";
+            });
+        }
+    });
+}, {
+    threshold: 0.4
+});
+observer.observe(section);
+</script> 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const video = entry.target;
+      if (entry.isIntersecting) {
+        // Play video when section comes into view
+        video.play().catch(err => {
+          console.log("Autoplay blocked:", err);
+        });
+      } else {
+        // Pause when out of view
+        video.pause();
+      }
+
+    });
+  }, {
+    threshold: 0.5 // 50% visible then play
+  });
+  // Select all videos
+  document.querySelectorAll('.video-player').forEach(video => {
+    observer.observe(video);
+  });
+});
+</script> 
+<script>
+function switchProjTab(el, tab) {
+
+    // Remove active class from all tabs
+    el.closest('.proj-tabs')
+      .querySelectorAll('.proj-tab')
+      .forEach(t => t.classList.remove('active'));
+
+    // Add active class to clicked tab
+    el.classList.add('active');
+
+    // Hide all tab contents
+    document.getElementById('tab-ongoing-proj').style.display = 'none';
+    document.getElementById('tab-completed-proj').style.display = 'none';
+    document.getElementById('tab-archived-proj').style.display = 'none';
+
+    // Show selected tab content
+    document.getElementById('tab-' + tab).style.display = 'block';
+}
+	
+	
+	// Arrow click -> Activate Previous tab
+document.querySelector('.proj-prev-arrow').addEventListener('click', function () {
+    const previousTab = document.querySelector('.proj-tab[onclick*="archived-proj"]');
+    if (previousTab) {
+        switchProjTab(previousTab, 'archived-proj');
+    }
+});
+	
+	
+
+// Old Projects click -> Activate Previous tab
+document.querySelector('.old-project').addEventListener('click', function () {
+    const previousTab = document.querySelector('.proj-tab[onclick*="archived-proj"]');
+
+    if (previousTab) {
+        switchProjTab(previousTab, 'archived-proj');
+    }
+});
+	
+
+	
+</script>
+	
+	<script>
+		document.querySelectorAll('.carousel').forEach(carousel => {
+
+    const slides = carousel.querySelectorAll('.slide');
+    const dotsContainer = carousel.querySelector('.dots');
+    const nextBtn = carousel.querySelector('.next');
+    const prevBtn = carousel.querySelector('.prev');
+
+    let current = 0;
+    let autoplay = null;
+    let startX = 0;
+    let endX = 0;
+
+    // ✅ Clear dots to prevent duplication
+    dotsContainer.innerHTML = '';
+
+    // ✅ Create dots
+    slides.forEach((_, index) => {
+        const dot = document.createElement('div');
+        dot.className = 'dot';
+
+        if (index === 0) dot.classList.add('active');
+
+        dot.addEventListener('click', () => {
+            current = index;
+            showSlide();
+            resetAutoplay();
+        });
+
+        dotsContainer.appendChild(dot);
+    });
+
+    function getDots() {
+        return dotsContainer.querySelectorAll('.dot');
+    }
+
+    function showSlide() {
+        slides.forEach(s => s.classList.remove('active'));
+        getDots().forEach(d => d.classList.remove('active'));
+
+        slides[current].classList.add('active');
+        getDots()[current].classList.add('active');
+    }
+
+    function nextSlide() {
+        current = (current + 1) % slides.length;
+        showSlide();
+    }
+
+    function prevSlide() {
+        current = (current - 1 + slides.length) % slides.length;
+        showSlide();
+    }
+
+    nextBtn.addEventListener('click', () => {
+        nextSlide();
+        resetAutoplay();
+    });
+
+    prevBtn.addEventListener('click', () => {
+        prevSlide();
+        resetAutoplay();
+    });
+
+    function startAutoplay() {
+        stopAutoplay(); // ✅ Prevent duplicates
+        autoplay = setInterval(nextSlide, 3000);
+    }
+
+    function stopAutoplay() {
+        if (autoplay) clearInterval(autoplay);
+    }
+
+    function resetAutoplay() {
+        startAutoplay();
+    }
+
+    startAutoplay();
+
+    carousel.addEventListener('mouseenter', stopAutoplay);
+    carousel.addEventListener('mouseleave', startAutoplay);
+
+    // ✅ Swipe handler
+    function handleSwipe() {
+        let diff = startX - endX;
+
+        if (Math.abs(diff) < 50) return;
+
+        if (diff > 0) nextSlide();
+        else prevSlide();
+
+        resetAutoplay();
+    }
+
+    // Desktop drag
+    carousel.addEventListener('mousedown', e => {
+        carousel.classList.add('dragging');
+        startX = e.clientX;
+    });
+
+    carousel.addEventListener('mouseup', e => {
+        carousel.classList.remove('dragging');
+        endX = e.clientX;
+        handleSwipe();
+    });
+
+    // ✅ Fix: cancel drag if leaves area
+    carousel.addEventListener('mouseleave', () => {
+        carousel.classList.remove('dragging');
+    });
+
+    // Mobile touch
+    carousel.addEventListener('touchstart', e => {
+        startX = e.touches[0].clientX;
+    }, { passive: true });
+
+    carousel.addEventListener('touchend', e => {
+        endX = e.changedTouches[0].clientX;
+        handleSwipe();
+    }, { passive: true });
+
+});
+	</script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Park by Repose — Suryam Group</title>
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Existing project stylesheets retained -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/project-pages.css">
+  <link rel="stylesheet" href="css/microsite.css">
+</head>
+<body class="project-page">
+  <!-- WHATSAPP -->
+  <div class="wa-btn" id="waBtn" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </div>
+
+  <!-- MAIN NAV — retained -->
+  <nav id="mainNav">
+    <div class="nav-logo-wrap" onclick="showPage('home')"><span class="nav-logo-text"><div class="suryam-logo"><a href="index.html"><img src="images/suryam-group-logo-white.png" alt="Suryam Logo"></a></div></span></div>
+    <div class="nav-cta right-menu" onclick="goContact()">
+      <div class="right-menu-item"><a href="contact-us.html">Contact Us</a></div>
+      <div class="nav-ham" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <!-- MENU OVERLAY — retained -->
+  <div class="menu-ov" id="menuOv">
+    <div class="menu-close" onclick="toggleMenu()">✕ &nbsp;Close</div>
+    <div class="menu-links">
+      <div class="menu-link"><a href="about-suryam.html">About Suryam</a></div>
+      <div class="menu-link"><a href="team.html">Our Team</a></div>
+      <div class="menu-link"><a href="projects.html">Projects</a></div>
+      <div class="menu-divider"></div>
+      <div class="menu-link"><a href="btw.html">By The Waters</a></div>
+      <div class="menu-link"><a href="sage.html">The Sage</a></div>
+      <div class="menu-link"><a href="park.html">The Park</a></div>
+      <div class="menu-link">Suryam Arnath</div>
+    </div>
+  </div>
+
+  <!-- 1. HERO: content updated for The Park by Repose -->
+  <div class="proj-hero">
+    <div class="banner-video">
+      <video width="100%" height="100%" loop autoplay playsinline muted controlslist="nodownload nofullscreen noremoteplayback" poster="images/park/the-park-by-repose-video-poster.jpg" class="video cover video-player">
+        <source src="images/park/the-park-by-repose-video.mp4" type="video/mp4">
+      </video>
+  
+       
+        
+        
+        
+        <div class="audio-controls">
+      <svg class="icon-muted" aria-label="Audio is muted" fill="currentColor" height="14" width="14" viewBox="0 0 48 48">
+        <title>Muted</title>
+        <path clip-rule="evenodd" fill-rule="evenodd" d="M1.5 13.3c-.8 0-1.5.7-1.5 1.5v18.4c0 .8.7 1.5 1.5 1.5h8.7l12.9 12.9c.9.9 2.5.3 2.5-1v-9.8c0-.4-.2-.8-.4-1.1l-22-22c-.3-.3-.7-.4-1.1-.4h-.6zm46.8 31.4-5.5-5.5C44.9 36.6 48 31.4 48 24c0-11.4-7.2-17.4-7.2-17.4-.6-.6-1.6-.6-2.2 0L37.2 8c-.6.6-.6 1.6 0 2.2 0 0 5.7 5 5.7 13.8 0 5.4-2.1 9.3-3.8 11.6L35.5 32c1.1-1.7 2.3-4.4 2.3-8 0-6.8-4.1-10.3-4.1-10.3-.6-.6-1.6-.6-2.2 0l-1.4 1.4c-.6.6-.6 1.6 0 2.2 0 0 2.6 2 2.6 6.7 0 1.8-.4 3.2-.9 4.3L25.5 22V1.4c0-1.3-1.6-1.9-2.5-1L13.5 10 3.3-.3c-.6-.6-1.5-.6-2.1 0L-.2 1.1c-.6.6-.6 1.5 0 2.1L4 7.6l26.8 26.8 13.9 13.9c.6.6 1.5.6 2.1 0l1.4-1.4c.7-.6.7-1.6.1-2.2z"/>
+      </svg>
+      <svg class="icon-playing hidden" aria-label="Audio is playing" fill="currentColor" height="14" width="14" viewBox="0 0 24 24">
+        <title>Playing</title>
+        <path d="M16.636 7.028a1.5 1.5 0 10-2.395 1.807 5.365 5.365 0 011.103 3.17 5.378 5.378 0 01-1.105 3.176 1.5 1.5 0 102.395 1.806 8.396 8.396 0 001.71-4.981 8.39 8.39 0 00-1.708-4.978zm3.73-2.332A1.5 1.5 0 1018.04 6.59 8.823 8.823 0 0120 12.007a8.798 8.798 0 01-1.96 5.415 1.5 1.5 0 002.326 1.894 11.672 11.672 0 002.635-7.31 11.682 11.682 0 00-2.635-7.31zm-8.963-3.613a1.001 1.001 0 00-1.082.187L5.265 6H2a1 1 0 00-1 1v10.003a1 1 0 001 1h3.265l5.01 4.682.02.021a1 1 0 001.704-.814L12.005 2a1 1 0 00-.602-.917z"/>
+      </svg>
+    </div>
+
+      
+        
+        
+        
+        
+        
+    </div>
+    <div class="proj-hero-overlay" style="background:linear-gradient(180deg,transparent 35%,rgba(10,20,32,.62) 100%)"></div>
+    <div class="proj-hero-content">
+      <div class="proj-hero-title" style="color:white">THE PARK</div>
+      <div class="proj-hero-sub">By Repose · A life full of experiences</div>
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+        <div class="ps-btn"><a href="#park-experiences">Explore Experiences</a></div>
+        <div class="ps-btn"><a href="#enquire-section">Enquire Now</a></div>
+      </div>
+    </div>
+    <div class="proj-scroll-down"><div class="proj-scroll-lbl" style="color:rgba(255,255,255,.5)">Scroll</div><div class="proj-scroll-line" style="background:linear-gradient(180deg,rgba(255,255,255,.5),transparent)"></div></div>
+  </div>
+
+  <!-- 2. ABOUT THE PARK -->
+  <div class="psec rv">
+    <div class="two-col about-project-col">
+      <div>
+        <div class="ps-title">Life Measured in Experiences</div><div class="ps-div"></div>
+        <div class="ps-body">Life can either be measured in years or in experiences. The Park by Repose is for those who believe in the latter. Created as a first home for effortless suburban living, it brings together a multitude of experiences for the whole family.</div>
+        <div class="ps-body" style="margin-top:12px">At its heart is a central parkland, landscaped with indigenous flora and thoughtfully curated spaces designed to thrill, relax, excite and rejuvenate.</div>
+      </div>
+      <div class="ps-img"><span><img src="images/park/the-park-by-repose-about.jpg" class="img-suryam height-medium" alt="Landscaped green spaces at The Park by Repose"></span></div>
+    </div>
+  </div>
+
+  <!-- 3. PROJECT GALLERY / VIEWS -->
+  <div class="psec psec-alt rv">
+<!--
+    <div class="ps-title">A Place for Every Kind of Day</div><div class="ps-div"></div>
+    <div class="ps-body">Open landscapes, thoughtfully planned spaces and moments of calm create a neighbourhood where everyday life becomes an experience.</div>
+-->
+    <div class="carousel project-carousel">
+      <div class="slide active"><img src="images/park/gallery/the-park-by-repose-1.jpg" alt="The Park by Repose landscape view"></div>
+      <div class="slide"><img src="images/park/gallery/the-park-by-repose-2.jpg" alt="The Park by Repose community spaces"></div>
+      <div class="slide"><img src="images/park/gallery/the-park-by-repose-3.jpg" alt="The Park by Repose landscaped surroundings"></div>
+      <button class="all-nav prev" aria-label="Previous image"><img src="images/left-arrow.png" alt=""></button>
+      <button class="all-nav next" aria-label="Next image"><img src="images/right-arrow.png" alt=""></button><div class="dots"></div>
+    </div>
+  </div>
+
+  <!-- 4. CENTRAL PARK -->
+  <div class="psec rv">
+    <div class="two-col">
+      <div class="ps-img"><span><img src="images/park/central-park.jpg" class="img-suryam height-medium" alt="Central parkland at The Park by Repose"></span></div>
+      <div><div class="ps-title">At the Heart of It All, A Park</div><div class="ps-div"></div>
+        <div class="ps-body">The central parkland is the soul of The Park by Repose. Landscaped abundance and indigenous flora bring nature into everyday routines, making room for outdoor recreation, unhurried moments and shared memories.</div>
+        <div class="ps-body" style="margin-top:12px">From a morning walk to an evening with family, the open spaces invite residents to enjoy the outdoors at their own pace.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. EXPERIENCES & AMENITIES: sourced from The Park by Repose website -->
+  <div class="psec psec-alt rv amenities-sec" id="park-experiences">
+    <div class="ps-title">Experiences for Everyone</div><div class="ps-div"></div>
+    <div class="ps-body">From active pursuits to relaxed afternoons, The Park brings together spaces for play, wellness, recreation and connection.</div>
+    <div class="amenity-tabs">
+      <button class="amenity-tab active" data-tab="park-outdoor">Outdoor Experiences</button>
+      <button class="amenity-tab" data-tab="park-recreation">Sports & Recreation</button>
+      <button class="amenity-tab" data-tab="park-leisure">Leisure & Community</button>
+    </div>
+    <div class="amenity-content active" id="park-outdoor"><div class="amenity-two-col"><div class="amenity-grid">
+      <div class="amenity-item"><div class="amenity-block"><div class="amenities-icon"><img src="images/bythewaters/icons/walking-trail.png" alt=""></div><div class="amenity-name">Jogging and Walking Tracks</div></div></div>
+      <div class="amenity-item"><div class="amenity-block"><div class="amenities-icon"><img src="images/bythewaters/icons/multiple-garden.png" alt=""></div><div class="amenity-name">Landscaped Parkland</div></div></div>
+      <div class="amenity-item"><div class="amenity-block"><div class="amenities-icon"><img src="images/park/icons/sidewalks.png" alt=""></div><div class="amenity-name">Sidewalks</div></div></div>
+      <div class="amenity-item"><div class="amenity-block"><div class="amenities-icon"><img src="images/park/icons/giant-hammock.png" alt=""></div><div class="amenity-name">Giant Hammock</div></div></div>
+      <div class="amenity-item"><div class="amenity-block"><div class="amenities-icon"><img src="images/park/icons/cycle.png" alt=""></div><div class="amenity-name">Cycling</div></div></div>
+    </div><div class="amenity-col-img"><img src="images/park/the-park-by-repose-outdoor.jpg" alt="Outdoor experiences"></div></div></div>
+    <div class="amenity-content" id="park-recreation"><div class="amenity-two-col"><div class="amenity-grid">
+      <div class="amenity-item"><div class="amenity-block"><div class="amenities-icon"><img src="images/bythewaters/icons/infinity-pool.png" alt=""></div><div class="amenity-name">Swimming Pool</div></div></div>
+      <div class="amenity-item"><div class="amenity-block"><div class="amenities-icon"><img src="images/bythewaters/icons/fitness-centre.png" alt=""></div><div class="amenity-name">Gym</div></div></div>
+      <div class="amenity-item"><div class="amenity-block"><div class="amenities-icon"><img src="images/park/icons/mini-football.png" alt=""></div><div class="amenity-name">Mini Football</div></div></div>
+      <div class="amenity-item"><div class="amenity-block"><div class="amenities-icon"><img src="images/park/icons/box-cricket.png" alt=""></div><div class="amenity-name">Box Cricket</div></div></div>
+      <div class="amenity-item"><div class="amenity-block"><div class="amenities-icon"><img src="images/park/icons/table-tennis.png" alt=""></div><div class="amenity-name">Table Tennis</div></div></div>
+      <div class="amenity-item"><div class="amenity-block"><div class="amenities-icon"><img src="images/park/icons/hockey.png" alt=""></div><div class="amenity-name">Air Hockey</div></div></div>
+      <div class="amenity-item"><div class="amenity-block"><div class="amenities-icon"><img src="images/park/icons/chess.png" alt=""></div><div class="amenity-name">Chess</div></div></div>
+      <div class="amenity-item"><div class="amenity-block"><div class="amenities-icon"><img src="images/park/icons/carrom.png" alt=""></div><div class="amenity-name">Carrom and Board Games</div></div></div>
+    </div><div class="amenity-col-img"><img src="images/park/the-park-by-repose-recreation.jpg" alt="Sports and recreation"></div></div></div>
+    <div class="amenity-content" id="park-leisure"><div class="amenity-two-col"><div class="amenity-grid">
+      <div class="amenity-item"><div class="amenity-block"><div class="amenities-icon"><img src="images/park/icons/amphitheatre.png" alt=""></div><div class="amenity-name">Amphitheatre</div></div></div>
+      <div class="amenity-item"><div class="amenity-block"><div class="amenities-icon"><img src="images/bythewaters/icons/library.png" alt=""></div><div class="amenity-name">Library</div></div></div>
+      <div class="amenity-item"><div class="amenity-block"><div class="amenities-icon"><img src="images/park/icons/kids-play-area.png" alt=""></div><div class="amenity-name">Kids Play Area</div></div></div>
+      <div class="amenity-item"><div class="amenity-block"><div class="amenities-icon"><img src="images/park/icons/lake-cafe.png" alt=""></div><div class="amenity-name">Lake Café</div></div></div>
+      <div class="amenity-item"><div class="amenity-block"><div class="amenities-icon"><img src="images/park/icons/event-lawn.png" alt=""></div><div class="amenity-name">Event Lawn</div></div></div>
+    </div><div class="amenity-col-img"><img src="images/park/the-park-by-repose-leisure.jpg" alt="Leisure and community spaces"></div></div></div>
+  </div>
+  <script>
+    document.querySelectorAll('.amenity-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        const section = tab.closest('.amenities-sec');
+        section.querySelectorAll('.amenity-tab').forEach(btn => btn.classList.remove('active'));
+        section.querySelectorAll('.amenity-content').forEach(content => content.classList.remove('active'));
+        tab.classList.add('active');
+        const panel = document.getElementById(tab.dataset.tab);
+        if (panel) panel.classList.add('active');
+      });
+    });
+  </script>
+
+  <!-- 6. LOCATION + CONTACT -->
+  <div class="psec psec-alt rv" id="enquire-section">
+    <div class="ps-tag">Location &amp; Contact</div>
+    <div class="two-col" style="margin-top:28px">
+      <div>
+        <div class="proj-map"><iframe src="https://www.google.com/maps?q=The%20Park%20by%20Repose%20Medha%20Cross%20Road&output=embed" width="100%" height="100%" style="border:0" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="The Park by Repose location"></iframe></div>
+        <div class="project-address-block">
+          <div class="project-address-title">Address</div><div class="project-address">The Park by Repose, near Medha Cross Road.</div>
+          <div class="project-address-title">Phone</div><div class="project-phone"><a href="tel:+919033117777">+91 90331 17777</a></div>
+<!--          <div style="margin-top:14px"><a href="https://www.google.com/maps/search/?api=1&query=The+Park+by+Repose+Medha+Cross+Road" target="_blank" rel="noopener">Get Directions ↗</a></div>-->
+        </div>
+      </div>
+      <div>
+        <div class="ps-title" style="font-size:30px;margin-bottom:22px">Let's Talk</div>
+        <form class="park-enquiry-form" action="#" method="post">
+          <input class="proj-contact-input" name="name" placeholder="Your Name" type="text" autocomplete="name" required>
+          <input class="proj-contact-input" name="phone" placeholder="WhatsApp Number" type="tel" autocomplete="tel" required>
+          <input class="proj-contact-input" name="email" placeholder="Email Address" type="email" autocomplete="email" required>
+          <select class="proj-contact-input" name="enquiry" style="appearance:none;cursor:pointer" required><option value="" disabled selected>Type of Enquiry</option><option>Project Details</option><option>Amenities</option><option>Pricing</option><option>Schedule a Visit</option></select>
+          <button class="proj-contact-submit" type="submit">Send Enquiry</button>
+          <p class="ps-body" style="font-size:12px;margin-top:10px">Please connect this form to your existing enquiry/email backend before publishing.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER — retained from the supplied code -->
+  <footer class="main-footer">
+    <div class="footer-grid">
+      <div><div class="footer-brand-name"><div class="suryam-logo-footer"><img src="images/suryam-group-logo-white.png" alt="Suryam Logo"></div></div></div>
+      <div>
+        <div class="footer-col-hd">Projects</div>
+        <div class="footer-lk"><a href="btw.html">By The Waters</a></div>
+        <div class="footer-lk"><a href="sage.html">The Sage</a></div>
+        <div class="footer-lk">The Park</div><div class="footer-lk">Suryam Arnath</div><div class="footer-lk">Suryam Repose</div><div class="footer-lk">The Banyan</div>
+      </div>
+      <div>
+        <div class="footer-col-hd">Company</div>
+        <div class="footer-lk"><a href="about-suryam.html">About Suryam</a></div><div class="footer-lk"><a href="team.html">Our Team</a></div><div class="footer-lk"><a href="projects.html">Projects</a></div><div class="footer-lk">Awards &amp; Media</div>
+      </div>
+      <div>
+        <div class="footer-col-hd">Connect</div>
+        <div class="footer-lk"><a href="partner-with-us.html">Partner With Us</a></div><div class="footer-lk"><a href="vendor-registration.html">Vendor Registration</a></div><div class="footer-lk"><a href="maintenance-query.html">Maintenance Query</a></div><div class="footer-lk"><a href="nris.html">NRI's</a></div><div class="footer-lk">Faqs</div><div class="footer-lk">Blogs</div><div class="footer-lk"><a href="contact-us.html">Contact Us</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 Suryam Group. All rights reserved. <a href="https://compubrain.com/" target="_blank" class="cb" title="Website Designed By CompuBrain"><img src="images/website-designed-by-compubrain.png" alt="CompuBrain Monogram"></a></div>
+      <div class="footer-copy">Privacy Policy &nbsp;·&nbsp; Terms of Use</div>
+    </div>
+  </footer>
+
+  <!-- Existing project scripts retained -->
+  <script src="js/main.js"></script>
+  <script src="js/carousel.js"></script>
+  <script>
+    const allVideos = document.querySelectorAll('.banner-video, .about-video');
+    allVideos.forEach(wrapper => {
+      const video = wrapper.querySelector('video');
+      const audioToggle = wrapper.querySelector('.audio-controls');
+      const iconMuted = wrapper.querySelector('.icon-muted');
+      const iconPlaying = wrapper.querySelector('.icon-playing');
+      if (!video || !audioToggle || !iconMuted || !iconPlaying) return;
+      audioToggle.addEventListener('click', () => {
+        allVideos.forEach(otherWrapper => {
+          const otherVideo = otherWrapper.querySelector('video');
+          const otherMutedIcon = otherWrapper.querySelector('.icon-muted');
+          const otherPlayingIcon = otherWrapper.querySelector('.icon-playing');
+          if (otherVideo && otherVideo !== video) {
+            otherVideo.muted = true;
+            if (otherMutedIcon) otherMutedIcon.classList.remove('hidden');
+            if (otherPlayingIcon) otherPlayingIcon.classList.add('hidden');
+          }
+        });
+        video.muted = !video.muted;
+        iconMuted.classList.toggle('hidden', !video.muted);
+        iconPlaying.classList.toggle('hidden', video.muted);
+        video.play().catch(() => {});
+      });
+    });
+    const waBtn = document.getElementById('waBtn');
+    window.addEventListener('scroll', () => {
+      if (waBtn) waBtn.classList.toggle('show', window.scrollY > 200);
+    });
+    document.addEventListener('DOMContentLoaded', () => {
+      const videoObserver = new IntersectionObserver(entries => entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.play().catch(() => {});
+        else entry.target.pause();
+      }), { threshold: 0.5 });
+      document.querySelectorAll('.video-player').forEach(video => videoObserver.observe(video));
+    });
+    document.querySelector('.park-enquiry-form')?.addEventListener('submit', event => {
+      event.preventDefault();
+      alert('The enquiry form is ready for integration. Please connect it to your existing backend to send submissions.');
+    });
+  </script>
+</body>
+</html>

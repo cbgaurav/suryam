@@ -1,0 +1,492 @@
+.align-items-start {
+  align-items: start;
+}
+.white-bg {
+  background: #fff;
+}
+.wa-btn {
+  /* Hidden initially */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(30px);
+  transition: all 0.4s ease;
+}
+/* Show on scroll */
+.wa-btn.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.ps-img {
+  display: inherit;
+  overflow: hidden;
+}
+.ps-img span {
+  height: 100%;
+  width: 100%;
+}
+/* ══════════════════════════════════
+   SURYAM GROUP — INNER PAGES
+   (About, Team, Projects)
+══════════════════════════════════ */
+/* ── PAGE HERO ── */
+.page-hero {
+  min-height: 60vh;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 140px 80px 64px;
+  overflow: hidden;
+  background: var(--bg2);
+}
+.page-hero-vlines {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+.ph-vl {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, rgba(193, 148, 82, 0.05), transparent);
+}
+.ph-vl:nth-child(1) {
+  left: 25%;
+}
+.ph-vl:nth-child(2) {
+  left: 50%;
+}
+.ph-vl:nth-child(3) {
+  left: 75%;
+}
+.ph-year-bg {
+  position: absolute;
+  top: 50%;
+  right: 80px;
+  transform: translateY(-50%);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 200px;
+  font-weight: 300;
+  color: rgba(193, 148, 82, 0.03);
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+.ph-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 50px;
+  font-weight: 300;
+  color: var(--white);
+  line-height: 0.95;
+  letter-spacing: 0.02em;
+  position: relative;
+  z-index: 1;
+}
+.ph-sub {
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-top: 14px;
+  position: relative;
+  z-index: 1;
+}
+/* ── ABOUT: Chairman pillars ── */
+.ch-pillar {
+  border-left: 2px solid var(--ochre-dim);
+  padding: 10px 18px;
+  margin-top: 14px;
+}
+.ch-pillar-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  color: var(--ochre2);
+  margin-bottom: 4px;
+  font-style: italic;
+}
+.ch-pillar-body {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 22px;
+}
+/* ── ABOUT: Vision / Mission cards ── */
+.vm-card {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  padding: 40px 36px;
+}
+.vm-label {
+  font-size: 8px;
+  letter-spacing: 0.28em;
+  color: var(--ochre);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.vm-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 26px;
+  font-weight: 300;
+  color: var(--white);
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+.vm-body {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.60;
+}
+/* ══════════════════════════════════
+   TEAM PAGE
+══════════════════════════════════ */
+.team-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.team-profile {
+  /*
+  background: var(--bg3);
+  border: 1px solid var(--border);
+*/
+  display: grid;
+  grid-template-columns: 33.33% 1fr;
+  transition: border-color 0.4s;
+  cursor: default;
+}
+.team-profile:hover {
+  border-color: var(--ochre-dim);
+}
+.team-photo {
+  background: var(--bg2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8px;
+  letter-spacing: 0.14em;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  min-height: 260px;
+  position: relative;
+  overflow: hidden;
+}
+/*
+.team-photo::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    135deg,
+    var(--bg3) 0, var(--bg3) 20px,
+    var(--bg2) 20px, var(--bg2) 40px
+  );
+  opacity: 0.4;
+}
+*/
+.team-photo span {
+  position: relative;
+  z-index: 1;
+}
+.team-info {
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.team-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  color: var(--white);
+  margin-bottom: 4px;
+}
+.team-role {
+  font-size: 8px;
+  letter-spacing: 0.22em;
+  color: var(--ochre);
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.team-bio {
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--text-muted);
+}
+/* ══════════════════════════════════
+   PROJECTS PAGE
+══════════════════════════════════ */
+.proj-full {
+  position: relative;
+  height: 660px;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+.proj-full-bg {
+  position: absolute;
+  inset: 0;
+  transition: transform 0.8s;
+}
+.proj-full:hover .proj-full-bg {
+  transform: scale(1.03);
+}
+.proj-full-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(10, 9, 8, 0.85) 0%, rgba(10, 9, 8, 0.2) 70%, transparent 100%);
+}
+.proj-full-content {
+  position: absolute;
+  left: 80px;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 460px;
+}
+.proj-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 110px;
+  font-weight: 300;
+  color: rgba(193, 148, 82, 0.05);
+  line-height: 1;
+  position: absolute;
+  top: -30px;
+  left: -14px;
+}
+.proj-full-loc {
+  font-size: 8px;
+  letter-spacing: 0.24em;
+  color: rgba(255, 255, 255, 0.35);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.proj-full-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 42px;
+  font-weight: 300;
+  color: var(--white);
+  line-height: 0.95;
+  margin-bottom: 8px;
+}
+.proj-full-tag {
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  color: rgba(255, 255, 255, 0.4);
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+.proj-full-desc {
+  font-size: 12px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.45);
+  margin-bottom: 24px;
+}
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .page-hero {
+    padding: 60px 24px;
+  }
+  .ph-title {
+    font-size: 44px;
+  }
+  .team-row {
+    grid-template-columns: 1fr;
+  }
+  .team-profile {
+    grid-template-columns: 1fr;
+  }
+  .proj-full {
+    height: 60vh;
+  }
+  .proj-full-content {
+    left: 24px;
+    max-width: calc(100% - 48px);
+  }
+  .proj-full-name {
+    font-size: 40px;
+  }
+}
+.height-medium {
+  height: 500px;
+}
+.home-about-text {
+  max-width: 846px;
+  margin: 0 auto;
+}
+.chairman-img img {
+  max-width: 100%;
+  height: auto;
+}
+.about-img img {
+  max-width: 100%;
+  height: 560px;
+}
+.sub-founder {
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  color: var(--text-muted);
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+.proj-full:last-child {
+  margin-bottom: 0;
+}
+.call-details {
+  margin-top: 28px
+}
+.call-title {
+  font-size: 8px;
+  color: var(--ochre);
+  letter-spacing: 0.2em;
+  margin-bottom: 5px;
+  text-transform: uppercase
+}
+.call-text {
+  font-size: 13px;
+  color: var(--beige);
+  margin-bottom: 16px
+}
+.call-text a {
+  font-size: 13px;
+  color: var(--beige);
+  text-decoration: none;
+}
+.call-text a:hover {
+  color: var(--ochre2);
+}
+.c-p-text a {
+  color: var(--ochre);
+  text-decoration: none;
+  font-weight: 600;
+}
+.c-p-text {
+  padding: 20px;
+  border: 1px solid var(--border);
+  margin-top: 30px;
+}
+.c-p-text strong {
+  font-weight: 500;
+}
+/* ===========================
+   Channel Partner Form
+=========================== */
+.common-form {
+  width: 100%;
+  padding-left: 50px;
+}
+.common-form input, .common-form textarea {
+  display: block;
+  width: 100%;
+  background: var(--bg3);
+  border: 1px solid var(--border2);
+  padding: 15px;
+  font-size: 11px;
+  color: var(--beige);
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+.common-form input:focus, .common-form textarea:focus {
+  border-color: var(--ochre-dim);
+}
+.common-form input::placeholder, .common-form textarea::placeholder {
+  color: var(--text-dim);
+}
+.common-form .contact-submit {
+  display: block;
+  width: 100%;
+  background: transparent;
+  border: 1px solid var(--ochre-dim);
+  padding: 15px;
+  font-size: 8.5px;
+  letter-spacing: 0.2em;
+  color: var(--ochre);
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  transition: all 0.3s;
+  margin-top: 4px;
+}
+.common-form .contact-submit:hover {
+  background: var(--ochre);
+  color: var(--bg);
+}
+.common-form textarea {
+  resize: none;
+  height: 80px;
+}
+.file-wrapper {
+  overflow: hidden;
+  background: #f9f9f9;
+  padding: 0 20px;
+  position: relative;
+  margin-bottom: 0px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 11px;
+  color: var(--beige);
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+  background: var(--bg3);
+  border: 1px solid var(--border2);
+  font-size: 11px;
+  color: var(--beige);
+}
+.file-wrapper input {
+  left: 0;
+  opacity: .01;
+  cursor: pointer;
+  position: absolute;
+  -moz-opacity: .01;
+  filter: alpha(opacity=1);
+}
+.file-wrapper .file-button {
+  cursor: pointer;
+  margin-left: -20px;
+  padding: 15px 15px;
+  background: #28261e;
+  display: inline-block;
+  width: auto;
+}
+.file-wrapper input#resume {
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -o-border-radius: 0px;
+  outline: none;
+  width: 100%;
+  padding: 10px 32px;
+  display: block;
+  margin-bottom: 10px;
+}
+.file-holder {
+  top: 15px;
+  padding-left: 15px;
+  position: absolute;
+  left: auto;
+}
+.sm2p0 img {
+  max-width: 26px !important;
+  position: relative;
+  top: -2px;
+  filter: invert(1);
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-0 {
+  margin-top: 0px;
+}
+
+.vender-text-col{
+	position: sticky;
+	top: 100px;
+}
+
+.old-project-text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
